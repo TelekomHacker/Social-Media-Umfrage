@@ -1,1 +1,1 @@
-man kann .php dateien nicht mit chrome öffnen
+muss mit xampp geöffnet werden
