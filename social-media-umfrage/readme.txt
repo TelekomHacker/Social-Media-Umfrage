@@ -1,0 +1,1 @@
+man kann .php dateien nicht mit chrome öffnen
