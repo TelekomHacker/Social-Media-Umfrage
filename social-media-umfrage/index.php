@@ -28,16 +28,7 @@
         Hi!<br />
         Wir bitten euch alle Fragen ehrlich zu beantworten - nehmt euch bitte Zeit! Pro Frage k&ouml;nnt ihr jeweils eine Antwort ankreuzen. Es werden KEINE pers&ouml;nlichen Daten gespeichert. Die Umfrage ist 100% anonym, Ehrenwort!<br /><br />
         Wir w&uuml;nschen euch viel Spa&szlig; bei der Umfrage!<br /><br /><br />
-        <div style="font-weight: 600;">Disclaimer</div>
-         Gaudeamus igitur, iuvenes dum sumus; post iucundam iuventutem, post molestam senectutem nos habebit humus.
-
-Ubi sunt, qui ante nos in mundo fuere? Vadite ad superos, vadite ad inferos ubi iam fuere.
-
-Vita nostra brevis est, brevi finietur. Venit mors velociter, rapit nos atrociter, nemini parcetur.
-
-Vivat academia, vivant professores! Vivat membrum quodlibet, vivant membra quaeliber, semper sint in flore!
-
-Vivant omnes virgines, faciles formosae, vivant et mulieres, tenerae, amabiles, bonae, speciosae 
+        <div class="disclink" style="text-align: center;"><a data-toggle="modal" href="#modal32" onclick="$('modal1').modal('hide')">Disclaimer<img src="img/info.svg" alt="moin" width="19" height="19" /></a></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Schlie&szlig;en</button>
@@ -46,12 +37,12 @@ Vivant omnes virgines, faciles formosae, vivant et mulieres, tenerae, amabiles, 
   </div>
 </div>
 
-<!-- Modal 2 disclaimer -->
-<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe2" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<!-- Modal 3!!2 -->
+<div class="modal fade" id="modal32" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel2" style="font-weight: 600;">Disclaimer</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: 600;">Disclaimer</h5>
       </div>
       <div class="modal-body">
          Gaudeamus igitur, iuvenes dum sumus; post iucundam iuventutem, post molestam senectutem nos habebit humus.
@@ -63,6 +54,15 @@ Vita nostra brevis est, brevi finietur. Venit mors velociter, rapit nos atrocite
 Vivat academia, vivant professores! Vivat membrum quodlibet, vivant membra quaeliber, semper sint in flore!
 
 Vivant omnes virgines, faciles formosae, vivant et mulieres, tenerae, amabiles, bonae, speciosae
+
+Vivat et respublica et qui illam regit, vivat nostra civitas Maecenatum caritas, quae nos hic protegit
+
+Pereat tristitia, pereant osores, pareat diabolus, quivis anti burschius atque irrisores.
+
+
+Freuen wir uns also, solange wir jung sind! Nach einer lustigen Jugend, nach einem m&uuml;hsamen Alter wird uns die Erde haben.
+
+Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die untere Welt, wo sie schon gewesen sind.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Schlie&szlig;en</button>
@@ -73,9 +73,12 @@ Vivant omnes virgines, faciles formosae, vivant et mulieres, tenerae, amabiles, 
 	
 	   <div class="wrapper">
 	       <div class="header">
-	            <div class="h1">Social Media Umfrage 2020</div>
+	            <div class="h1" style="margin-bottom: 15px;">Social Media Umfrage 2020</div>
+	            <div class="progress" style="margin: 0px auto;width: 50%;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
                 <div class="frage">
-                    <div class="h2" style="margin-top: 65px;margin-bottom:32px">Wie viele Br&ouml;tchen sind gekauft?</div>
+                    <div class="h2" style="margin-top: 54px;margin-bottom:32px">Wie viele Br&ouml;tchen sind gekauft?</div>
                     <form method="post" action="index_2.php">
                         <div class="form-check" style="text-align:center;">         
                             <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" />
@@ -91,7 +94,7 @@ Vivant omnes virgines, faciles formosae, vivant et mulieres, tenerae, amabiles, 
                     </form>
                 </div>
                 <div class="footer">
-                <div style="color: #303030;">page 1/20</div> <a data-toggle="modal" href="#modal2">Disclaimer</a>
+                <a data-toggle="modal" href="#modal32">Disclaimer</a>
                 </div>
            </div>
        </div>
