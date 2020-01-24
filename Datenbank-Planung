@@ -1,9 +1,32 @@
-Datenbank: xx
-Spalten  : xx
-1: Name (Eigenschaft: Text, Zahl)
-2:
-3:
-4:
-5:
-x:
-..
+Datenbank: Umfrage
+Tabellen : 3 (person, socialmediaapps, messengerdienste)
+
+Tabelle 1 (person):
+Spalten: 8
+1: P_ID (int) (Primärschlüssel) (Auto_Increment)
+2: Altersgruppe (smallint)
+3: Geschlecht (tinytext)
+4: Beruf (tinytext)
+5: Lieblingsfach (tinytext)
+6: SocialMedidaApp (int)
+7: MessengerDienst (int)
+8: Nutzungsdauer (int)
+
+Tabelle 2 (socialmediaapps):
+Spalten: 7
+1: SM_ID (int) (Primärschlüssel) (Auto_Increment)
+2: Instagram (boolean)
+3: Youtube (boolean)
+4: Twitter (boolean)
+5: Facebook (boolean)
+6: Tiktok (boolean)
+7: Pinterest (boolean)
+
+Tabelle 3 (messengerdienste):
+Spalten: 6
+1: MD_ID (int) (Primärschlüssel) (Auto_Increment)
+2: Whatsapp (boolean)
+3: Snapchat (boolean)
+4: Telegram (boolean)
+5: Threema (boolean)
+6: Fbmessenger (boolean)
