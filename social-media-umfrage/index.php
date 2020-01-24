@@ -80,12 +80,15 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                 <div class="frage">
                     <div class="h2" style="margin-top: 54px;margin-bottom:32px">Wie viele Br&ouml;tchen sind gekauft?</div>
                     <form method="post" action="index_2.php">
-                        <div class="form-check" style="text-align:center;">         
-                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" />
+                        <div class="form-check" style="text-align:center;">    
+							<input name="checkbox1" value="no" type="hidden"> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
+                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
                             <label class="form-check-label" for="exampleCheck1" style="margin-bottom: 4px;">Ich fliege</label><br />
-                            <input type="checkbox" name="checkbox2" class="form-check-input" id="checkbox2" />
+							<input name="checkbox2" value="no" type="hidden">						
+                            <input type="checkbox" name="checkbox2" class="form-check-input" id="checkbox2" value="yes" />
                             <label class="form-check-label" for="exampleCheck2" style="margin-bottom: 4px;">Meine Socken brennen</label><br />
-                            <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" />
+							<input name="checkbox3" value="no" type="hidden">						
+                            <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
                             <label class="form-check-label" for="exampleCheck3" style="margin-bottom: 4px;">Wo ist mein Hund</label>
                         </div>
                         <div class="center" style="margin-top: 30px;">
