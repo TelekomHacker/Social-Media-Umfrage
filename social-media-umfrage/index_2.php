@@ -1,3 +1,18 @@
+<?php
+$check1_1 = $_POST['checkbox1'];	//checkbox Seite 1 Nr 1 usw
+$check1_2 = $_POST['checkbox2'];
+$check1_3 = $_POST['checkbox3'];
+
+//echo $check1;
+//echo $check2;
+//echo $check3;
+
+//$sql = "insert into users(nachname, email, vorname) values ('$check1', '$check2', '$check3')";
+//$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="de">
 
@@ -57,12 +72,15 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
 							<input name="checkbox1" value="no" type="hidden"> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
                             <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
                             <label class="form-check-label" for="exampleCheck1" style="margin-bottom: 4px;">Ich fliege</label><br />
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+							<input name="checkbox2" value="no" type="hidden"> 
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox2" />
                             <label class="form-check-label" for="exampleCheck1" style="margin-bottom: 4px;">Bowsers Festung</label><br />
-                            <input type="checkbox" class="form-check-input" id="exampleCheck2" />
+							<input name="checkbox3" value="no" type="hidden"> 
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2" name="checkbox3"/>
                             <label class="form-check-label" for="exampleCheck2" style="margin-bottom: 4px;">In die Minen von Moria</label><br />
-                            <input type="checkbox" class="form-check-input" id="exampleCheck3" />
-                            <label class="form-check-label" for="exampleCheck3" style="margin-bottom: 4px;">Nach Hause</label>
+							<input name="check1_1" value= <?=$check1_1?> type="hidden"> 
+							<input name="check1_2" value= <?=$check1_2?> type="hidden"> 
+							<input name="check1_3" value= <?=$check1_3?> type="hidden"> 
                         </div>
                         <div class="center" style="margin-top: 30px;">
                         <a href="index.php"><button type="button" class="btn btn-outline-secondary" style="margin-right: 12px;" >Zur&uuml;ck</button></a>
@@ -80,25 +98,7 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<?php
-$link = mysqli_connect("127.0.0.1", "root", "", "adressbuch"); //Bei jedem unterschiedlich
-	if (mysqli_connect_errno()) 
-	{echo "Failed to connect to MySQL: " . mysqli_connect_error(); }
 
-$check1 = $_POST['checkbox1'];
-$check2 = $_POST['checkbox2'];
-$check3 = $_POST['checkbox3'];
-
-echo $check1;
-echo $check2;
-echo $check3;
-
-$sql = "insert into users(nachname, email, vorname) values ('$check1', '$check2', '$check3')";
-//$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
-
-
-
-?>
 
     </body>
     
