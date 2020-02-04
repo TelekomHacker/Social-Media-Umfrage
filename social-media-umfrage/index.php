@@ -1,10 +1,10 @@
 <?php 
-$db_link = mysqli_connect (
-                     'smu2020.ddns.net',
-                     'phpmyadmin',
-                     'nigga234REAL!',
-                     'test'
-                    );
+//$db_link = mysqli_connect (
+//                     'smu2020.ddns.net',
+//                     'phpmyadmin',
+//                     'nigga234REAL!',
+//                     'test'
+//                    );
 
 ?>
 

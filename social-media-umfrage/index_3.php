@@ -11,7 +11,7 @@ $link = mysqli_connect (
 					 'test'
                    );
 
-$sql = "insert into pipo(heheh, id) values ('$check1', '$ip')";
+$sql = "UPDATE pipo SET kekek='$check1'  WHERE id='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
@@ -61,22 +61,22 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
-                    <div class="h2" style="">Wohin f&uuml;hrt der Weg?</div>
-                    <form method="post" action="index_3.php">
+                    <div class="h2" style="">Was willste?</div>
+                    <form method="post" action="index_2.php">
                         <div class="form-check" style="">         
                             <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
                             <input name="checkbox2" value="no" type="hidden" />
                             <input name="checkbox3" value="no" type="hidden" />
                             
                             <!-- 1 -->
-                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
-                            <label class="form-check-label" for="exampleCheck1" style="margin-bottom: 4px;">Ich fliege</label><br />
+                            <input type="checkbox" name="checkbox2_1" class="form-check-input" id="checkbox1" value="yes" />
+                            <label class="form-check-label" for="exampleCheck1" style="margin-bottom: 4px;">Dong</label><br />
 							<!-- 2 -->
                             <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox2" value="yes" />
-                            <label class="form-check-label" for="exampleCheck1" style="margin-bottom: 4px;">Bowsers Festung</label><br />
+                            <label class="form-check-label" for="exampleCheck1" style="margin-bottom: 4px;">187</label><br />
 							<!-- 3 -->
                             <input type="checkbox" class="form-check-input" id="exampleCheck2" name="checkbox3" value="yes"/>
-                            <label class="form-check-label" for="exampleCheck2" style="margin-bottom: 4px;">In die Minen von Moria</label><br />
+                            <label class="form-check-label" for="exampleCheck2" style="margin-bottom: 4px;">Grünes</label><br />
                         </div>
                         <div class="center" style="">
                         <a href="index.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
