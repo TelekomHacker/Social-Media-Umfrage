@@ -87,6 +87,12 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
                             <input name="checkbox2" value="no" type="hidden" />
                             <input name="checkbox3" value="no" type="hidden" />
+			    <input name="checkbox4" value="no" type="hidden" />
+			    <input name="checkbox5" value="no" type="hidden" />
+			    <input name="checkbox6" value="no" type="hidden" />
+			    <input name="checkbox7" value="no" type="hidden" />
+			    <input name="checkbox8" value="no" type="hidden" />
+			    <input name="checkbox9" value="no" type="hidden" />
                             
                             <!-- 1 -->
                             <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
@@ -98,22 +104,22 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
                             <label class="form-check-label" for="AltersGruppe3" style="">15/16</label>
 							<!-- 4 -->
-			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+			    <input type="checkbox" name="checkbox4" class="form-check-input" id="checkbox4" value="yes" />
                             <label class="form-check-label" for="AltersGruppe4" style="">17/18</label>
 							<!-- 5 -->
-			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+			    <input type="checkbox" name="checkbox5" class="form-check-input" id="checkbox5" value="yes" />
                             <label class="form-check-label" for="AltersGruppe5" style="">19 - 21</label>
 							<!-- 6 -->
-			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+			    <input type="checkbox" name="checkbox6" class="form-check-input" id="checkbox6" value="yes" />
                             <label class="form-check-label" for="AltersGruppe6" style="">22 - 30</label>
 							<!-- 7 -->
-			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+			    <input type="checkbox" name="checkbox7" class="form-check-input" id="checkbox7" value="yes" />
                             <label class="form-check-label" for="AltersGruppe7" style="">31 - 40</label>
 							<!-- 8 -->
-			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+			    <input type="checkbox" name="checkbox8" class="form-check-input" id="checkbox8" value="yes" />
                             <label class="form-check-label" for="AltersGruppe8" style="">41 - 50</label>
 							<!--  -->
-			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+			    <input type="checkbox" name="checkbox9" class="form-check-input" id="checkbox9" value="yes" />
                             <label class="form-check-label" for="AltersGruppe9" style="">51+</label>
                         </div>
                         <div class="center">
