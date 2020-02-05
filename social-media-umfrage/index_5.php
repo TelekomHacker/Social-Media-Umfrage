@@ -69,22 +69,22 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             <input name="checkbox3" value="no" type="hidden" />
                             
                             <!-- 1 -->
-                            <input type="checkbox" name="checkbox2_1" class="form-check-input" id="checkbox1" value="yes" />
+                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
                             <label class="form-check-label" for="SMApp1" style="margin-bottom: 4px;">Instagram</label><br />
 							<!-- 2 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox2" value="yes" />
+                            <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" value="yes" />
                             <label class="form-check-label" for="SMApp2" style="margin-bottom: 4px;">YouTube</label><br />
 							<!-- 3 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck2" name="checkbox3" value="yes"/>
+                            <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox3" value="yes"/>
                             <label class="form-check-label" for="SMApp3" style="margin-bottom: 4px;">Twitter</label><br />
 							<!-- 4 -->
-                            <input type="checkbox" name="checkbox2_1" class="form-check-input" id="checkbox1" value="yes" />
+                            <input type="checkbox" name="checkbox4" class="form-check-input" id="checkbox4" value="yes" />
                             <label class="form-check-label" for="SMApp4" style="margin-bottom: 4px;">Facebook</label><br />
 							<!-- 5 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox2" value="yes" />
+                            <input type="checkbox" class="form-check-input" id="checkbox5" name="checkbox5" value="yes" />
                             <label class="form-check-label" for="SMApp5" style="margin-bottom: 4px;">TikTok</label><br />
 							<!-- 6 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck2" name="checkbox3" value="yes"/>
+                            <input type="checkbox" class="form-check-input" id="checkbox6" name="checkbox6" value="yes"/>
                             <label class="form-check-label" for="SMApp6" style="margin-bottom: 4px;">Pinterest</label><br />
                         </div>
                         <div class="center" style="">
