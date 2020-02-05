@@ -67,6 +67,9 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
                             <input name="checkbox2" value="no" type="hidden" />
                             <input name="checkbox3" value="no" type="hidden" />
+			    <input name="checkbox4" value="no" type="hidden" />
+			    <input name="checkbox5" value="no" type="hidden" />
+				<input name="checkbox6" value="no" type="hidden" />
                             
                             <!-- 1 -->
                             <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
