@@ -58,7 +58,7 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
 	       <div class="header">
 	            <div class="h1" style="">Social Media Umfrage 2020</div>
 	            <div class="progress" style="">
-                    <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
                     <div class="h2" style="">Welche dieser Messenger Dienste nutzt du? (Mehrfachnennung möglich)</div>
