@@ -69,19 +69,19 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             <input name="checkbox3" value="no" type="hidden" />
                             
                             <!-- 1 -->
-                            <input type="checkbox" name="checkbox2_1" class="form-check-input" id="checkbox1" value="yes" />
+                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
                             <label class="form-check-label" for="Messenger1" style="margin-bottom: 4px;">WhatsApp</label><br />
 							<!-- 2 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox2" value="yes" />
+                            <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" value="yes" />
                             <label class="form-check-label" for="Messenger2" style="margin-bottom: 4px;">Snapchat</label><br />
 							<!-- 3 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck2" name="checkbox3" value="yes"/>
+                            <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox3" value="yes"/>
                             <label class="form-check-label" for="Messenger3" style="margin-bottom: 4px;">Telegram</label><br />
 							<!-- 4 -->
-                            <input type="checkbox" name="checkbox2_1" class="form-check-input" id="checkbox1" value="yes" />
+                            <input type="checkbox" name="checkbox4" class="form-check-input" id="checkbox4" value="yes" />
                             <label class="form-check-label" for="Messenger4" style="margin-bottom: 4px;">Threema</label><br />
 							<!-- 5 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox2" value="yes" />
+                            <input type="checkbox" class="form-check-input" id="checkbox5" name="checkbox5" value="yes" />
                             <label class="form-check-label" for="Messenger5" style="margin-bottom: 4px;">FB Messenger</label><br />
                         </div>
                         <div class="center" style="">
