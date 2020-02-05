@@ -58,7 +58,7 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
 	       <div class="header">
 	            <div class="h1" style="">Social Media Umfrage 2020 [Teil 2]</div>
 	            <div class="progress" style="">
-                    <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 91%" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
                     <div class="h2" style="">Ich fühle mich oft Müde und kraftlos</div>
