@@ -68,7 +68,7 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
 								<input type="text" name="Lieblingsfach" class="form-control" id="t1" placeholder="Bitte hier eingeben">
 							</div>
                         <div class="center" style="">
-                        <a href="index.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
+                        <a href="index_3.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
                         <button type="submit" class="btn btn-outline-primary" >Weiter</button>
                         </div>
                     </form>
