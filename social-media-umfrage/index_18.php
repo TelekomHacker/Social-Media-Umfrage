@@ -45,7 +45,7 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 </br>
-				<div class="h1" style="">Vielen Dank für die Teinahme an unserer Umfrage</div>
+				<div class="h1" style="">Vielen Dank für die Teinahme an unserer Umfrage!</div>
 				
 				
 				
