@@ -88,7 +88,7 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             <label class="form-check-label" for="SMApp6" style="margin-bottom: 4px;">Pinterest</label><br />
                         </div>
                         <div class="center" style="">
-                        <a href="index.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
+                        <a href="index_4.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
                         <button type="submit" class="btn btn-outline-primary" >Weiter</button>
                         </div>
                     </form>
