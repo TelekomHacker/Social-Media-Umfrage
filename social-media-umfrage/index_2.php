@@ -67,18 +67,19 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
                             <input name="checkbox2" value="no" type="hidden" />
                             <input name="checkbox3" value="no" type="hidden" />
-                            
+                            <input name="checkbox4" value="no" type="hidden" />
+				
                             <!-- 1 -->
                             <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
                             <label class="form-check-label" for="Geschlecht1" style="margin-bottom: 4px;">männlich</label><br />
 							<!-- 2 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox2" value="yes" />
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2" name="checkbox2" value="yes" />
                             <label class="form-check-label" for="Geschlecht2" style="margin-bottom: 4px;">weiblich</label><br />
 							<!-- 3 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck2" name="checkbox3" value="yes"/>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck3" name="checkbox3" value="yes"/>
                             <label class="form-check-label" for="Geschlecht3" style="margin-bottom: 4px;">divers</label><br />
 							<!-- 3 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck2" name="checkbox3" value="yes"/>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck4" name="checkbox4" value="yes"/>
                             <label class="form-check-label" for="Geschlecht4" style="margin-bottom: 4px;">keine Angabe</label><br />
                         </div>
                         <div class="center" style="">
