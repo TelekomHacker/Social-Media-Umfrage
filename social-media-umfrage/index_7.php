@@ -67,21 +67,23 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
                             <input name="checkbox2" value="no" type="hidden" />
                             <input name="checkbox3" value="no" type="hidden" />
+			    <input name="checkbox4" value="no" type="hidden" />
+			    <input name="checkbox5" value="no" type="hidden" />
                             
                             <!-- 1 -->
-                            <input type="checkbox" name="checkbox2_1" class="form-check-input" id="checkbox1" value="yes" />
+                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
                             <label class="form-check-label" for="Messenger11" style="margin-bottom: 4px;">platz</label><br />
 							<!-- 2 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox2" value="yes" />
+                            <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" value="yes" />
                             <label class="form-check-label" for="Messenger12" style="margin-bottom: 4px;">halter</label><br />
 							<!-- 3 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck2" name="checkbox3" value="yes"/>
+                            <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox3" value="yes"/>
                             <label class="form-check-label" for="Messenger13" style="margin-bottom: 4px;">für</label><br />
 							<!-- 4 -->
-                            <input type="checkbox" name="checkbox2_1" class="form-check-input" id="checkbox1" value="yes" />
+                            <input type="checkbox" name="checkbox4" class="form-check-input" id="checkbox4" value="yes" />
                             <label class="form-check-label" for="Messenger14" style="margin-bottom: 4px;">später</label><br />
 							<!-- 5 -->
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox2" value="yes" />
+                            <input type="checkbox" class="form-check-input" id="checkbox5" name="checkbox5" value="yes" />
                             <label class="form-check-label" for="Messenger15" style="margin-bottom: 4px;">siehe --> fragen --> Nr. 7</label><br />
                         </div>
                         <div class="center" style="">
