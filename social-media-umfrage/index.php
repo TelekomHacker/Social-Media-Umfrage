@@ -81,7 +81,7 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
-                    <div class="h2" style="">Wie viele Br&ouml;tchen sind gekauft?</div>
+                    <div class="h2" style="">Wie alt bist du?</div>
                     <form method="post" action="index_2.php">
                         <div class="form-check" style="">         
                             <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
@@ -90,13 +90,31 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             
                             <!-- 1 -->
                             <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
-                            <label class="form-check-label" for="exampleCheck1" style="">Ich fliege</label><br />
+                            <label class="form-check-label" for="AltersGruppe1" style="">0 - 12</label><br />
 							<!-- 2 -->
                             <input type="checkbox" name="checkbox2" class="form-check-input" id="checkbox2" value="yes" />
-                            <label class="form-check-label" for="exampleCheck2" style="">Meine Socken brennen</label><br />
+                            <label class="form-check-label" for="AltersGruppe2" style="">13/14</label><br />
 							<!-- 3 -->
                             <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
-                            <label class="form-check-label" for="exampleCheck3" style="">Wo ist mein Hund</label>
+                            <label class="form-check-label" for="AltersGruppe3" style="">15/16</label>
+							<!-- 4 -->
+			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+                            <label class="form-check-label" for="AltersGruppe4" style="">17/18</label>
+							<!-- 5 -->
+			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+                            <label class="form-check-label" for="AltersGruppe5" style="">19 - 21</label>
+							<!-- 6 -->
+			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+                            <label class="form-check-label" for="AltersGruppe6" style="">22 - 30</label>
+							<!-- 7 -->
+			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+                            <label class="form-check-label" for="AltersGruppe7" style="">31 - 40</label>
+							<!-- 8 -->
+			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+                            <label class="form-check-label" for="AltersGruppe8" style="">41 - 50</label>
+							<!--  -->
+			    <input type="checkbox" name="checkbox3" class="form-check-input" id="checkbox3" value="yes" />
+                            <label class="form-check-label" for="AltersGruppe9" style="">51+</label>
                         </div>
                         <div class="center">
                         <button type="submit" class="btn btn-outline-primary" style="margin-left:0px;">Weiter</button>
