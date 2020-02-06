@@ -1,7 +1,6 @@
 <?php
-$check1 = $_POST['checkbox1'];
-$check2 = $_POST['checkbox2'];
-$check3 = $_POST['checkbox3'];
+$check1 = $_POST['radiobox'];
+
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
@@ -64,42 +63,35 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="h2" style="">Was ist deine lieblingsfarbe?</div>
                     <form method="post" action="index_9.php">
                         <div class="form-check" style="">         
-                            <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
-                            <input name="checkbox2" value="no" type="hidden" />
-                            <input name="checkbox3" value="no" type="hidden" />
-			    <input name="checkbox4" value="no" type="hidden" />
-                            <input name="checkbox5" value="no" type="hidden" />
-			    <input name="checkbox6" value="no" type="hidden" />
-                            <input name="checkbox7" value="no" type="hidden" />
-			    <input name="checkbox8" value="no" type="hidden" />
-                            <input name="checkbox9" value="no" type="hidden" />
+                            <input name="radiobox" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
+
                             
                             <!-- 1 -->
-                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
+                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="schwarz" />
                             <label class="form-check-label" for="Farbe1" style="margin-bottom: 4px;">schwarz</label><br />
 							<!-- 2 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" value="yes" />
+                            <input type="radio" class="form-check-input" id="checkbox2" name="radiobox" value="gr&uuml;n" />
                             <label class="form-check-label" for="Farbe2" style="margin-bottom: 4px;">gr&uuml;n</label><br />
 							<!-- 3 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox3" value="yes"/>
+                            <input type="radio" class="form-check-input" id="checkbox3" name="radiobox" value="rot"/>
                             <label class="form-check-label" for="Farbe3" style="margin-bottom: 4px;">rot</label><br />
 							<!-- 4 -->
-                            <input type="checkbox" name="checkbox4" class="form-check-input" id="checkbox4" value="yes" />
+                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox4" value="weiß" />
                             <label class="form-check-label" for="Farbe4" style="margin-bottom: 4px;">weiß</label><br />
 							<!-- 5 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox5" name="checkbox5" value="yes" />
+                            <input type="radio" class="form-check-input" id="checkbox5" name="radiobox" value="blau" />
                             <label class="form-check-label" for="Farbe5" style="margin-bottom: 4px;">blau</label><br />
 							<!-- 6 -->
-                            <input type="checkbox" name="checkbox6" class="form-check-input" id="checkbox6" value="yes" />
+                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox6" value="rosa" />
                             <label class="form-check-label" for="Farbe6" style="margin-bottom: 4px;">rosa</label><br />
 							<!-- 7 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox7" name="checkbox7" value="yes" />
+                            <input type="radio" class="form-check-input" id="checkbox7" name="radiobox" value="gelb" />
                             <label class="form-check-label" for="Farbe7" style="margin-bottom: 4px;">gelb</label><br />
 							<!-- 8 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox8" name="checkbox8" value="yes"/>
+                            <input type="radio" class="form-check-input" id="checkbox8" name="radiobox" value="gelb"/>
                             <label class="form-check-label" for="Farbe8" style="margin-bottom: 4px;">violett</label><br />
 							<!-- 9 -->
-                            <input type="checkbox" name="checkbox9" class="form-check-input" id="checkbox9" value="yes" />
+                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox9" value="andere" />
                             <label class="form-check-label" for="Farbe9" style="margin-bottom: 4px;">andere</label><br />
                         </div>
                         <div class="center" style="">
