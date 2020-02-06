@@ -1,5 +1,5 @@
 <?php
-$check1 = $_POST['checkbox1'];
+$check1 = $_POST['radiobox'];
 
 
 $ip = $_SERVER['REMOTE_ADDR'];
