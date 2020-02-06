@@ -1,7 +1,6 @@
 <?php
-$check1 = $_POST['checkbox1'];
-$check2 = $_POST['checkbox2'];
-$check3 = $_POST['checkbox3'];
+$check1 = $_POST['radiobox'];
+
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
@@ -64,18 +63,17 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="h2" style="">Welchen Beruf &uuml;bst du aus?</div>
                     <form method="post" action="index_4.php">
                         <div class="form-check" style="">         
-                            <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
-                            <input name="checkbox2" value="no" type="hidden" />
-                            <input name="checkbox3" value="no" type="hidden" />
+                            <input name="andere" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
+
                             
                             <!-- 1 -->
-                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
+                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="Sch&uuml;ler" />
                             <label class="form-check-label" for="Beruf1" style="margin-bottom: 4px;">Sch&uuml;ler</label><br />
 							<!-- 2 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" value="yes" />
+                            <input type="radio" class="form-check-input" id="checkbox2" name="radiobox" value="Student" />
                             <label class="form-check-label" for="Beruf2" style="margin-bottom: 4px;">Student</label><br />
 							<!-- 3 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox3" value="yes"/>
+                            <input type="radio" class="form-check-input" id="checkbox3" name="radiobox" value="Anderes"/>
                             <label class="form-check-label" for="Beruf3" style="margin-bottom: 4px;">Anderes</label><br />
                         </div>
                         <div class="center" style="">
