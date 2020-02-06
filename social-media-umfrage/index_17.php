@@ -81,7 +81,7 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                         </div>
                         <div class="center" style="">
                         <a href="index_16.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
-                        <button type="submit" class="btn btn-outline-primary" >Weiter</button>
+                        <button type="submit" class="btn btn-outline-primary" >Abgeben</button>
                         </div>
                     </form>
                 </div>
