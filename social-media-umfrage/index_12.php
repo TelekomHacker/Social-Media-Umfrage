@@ -1,7 +1,6 @@
 <?php
 $check1 = $_POST['checkbox1'];
-$check2 = $_POST['checkbox2'];
-$check3 = $_POST['checkbox3'];
+
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
@@ -64,22 +63,20 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="h2" style="">Ich treffe oft Familie und Freunde um zu reden</div>
                     <form method="post" action="index_13.php">
                         <div class="form-check" style="">         
-                            <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
-                            <input name="checkbox2" value="no" type="hidden" />
-                            <input name="checkbox3" value="no" type="hidden" />
-							<input name="checkbox4" value="no" type="hidden" />
+                            <input name="radiobox" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
+
                             
                             <!-- 1 -->
-                            <input type="checkbox" name="checkbox11" class="form-check-input" id="checkbox1" value="yes" />
+                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="1" />
                             <label class="form-check-label" for="Antwort1" style="margin-bottom: 4px;">auf jeden Fall</label><br />
 							<!-- 2 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" value="yes" />
+                            <input type="radio" class="form-check-input" id="checkbox2" name="radiobox" value="2" />
                             <label class="form-check-label" for="Antwort2" style="margin-bottom: 4px;">wahrscheinlich ja</label><br />
 							<!-- 3 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox3" value="yes"/>
+                            <input type="radio" class="form-check-input" id="checkbox3" name="radiobox" value="3"/>
                             <label class="form-check-label" for="Antwort3" style="margin-bottom: 4px;">wahrscheinlich nein</label><br />
 							<!-- 4 -->
-                            <input type="checkbox" name="checkbox4" class="form-check-input" id="checkbox4" value="yes" />
+                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox4" value="4" />
                             <label class="form-check-label" for="Antwort4" style="margin-bottom: 4px;">auf keinen Fall</label><br />
                         </div>
                         <div class="center" style="">
