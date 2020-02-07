@@ -8,13 +8,13 @@ $check6 = $_POST['checkbox6'];
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
-                     'smu2020.ddns.net',
+                    'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
 					 'umfrage'
                    );
 
-$sql = "insert into socialmediaapps(SM_ID, Instagram, Youtube, Twitter, Facebook, Tiktok, Pinterest) values ('ip', '$check1', '$check2','$check3', '$check4', '$check5', '$check6')";
+$sql = "insert into socialmediaapps(s_ip, Instagram, Youtube, Twitter, Facebook, Tiktok, Pinterest) values ('$ip', '$check1', '$check2','$check3', '$check4', '$check5', '$check6')";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
@@ -67,26 +67,26 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="h2" style="">Welche dieser Messenger Dienste nutzt du? (Mehrfachnennung möglich)</div>
                     <form method="post" action="index_7.php">
                         <div class="form-check" style="">         
-                            <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
-                            <input name="checkbox2" value="no" type="hidden" />
-				<input name="checkbox3" value="no" type="hidden" />
-				<input name="checkbox4" value="no" type="hidden" />
-				<input name="checkbox5" value="no" type="hidden" />
+                            <input name="checkbox1" value="0" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
+                            <input name="checkbox2" value="0" type="hidden" />
+							<input name="checkbox3" value="0" type="hidden" />
+							<input name="checkbox4" value="0" type="hidden" />
+							<input name="checkbox5" value="0" type="hidden" />
                             
                             <!-- 1 -->
-                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
+                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="1" />
                             <label class="form-check-label" for="Messenger1" style="margin-bottom: 4px;">WhatsApp</label><br />
 							<!-- 2 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" value="yes" />
+                            <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" value="1" />
                             <label class="form-check-label" for="Messenger2" style="margin-bottom: 4px;">Snapchat</label><br />
 							<!-- 3 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox3" value="yes"/>
+                            <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox3" value="1"/>
                             <label class="form-check-label" for="Messenger3" style="margin-bottom: 4px;">Telegram</label><br />
 							<!-- 4 -->
-                            <input type="checkbox" name="checkbox4" class="form-check-input" id="checkbox4" value="yes" />
+                            <input type="checkbox" name="checkbox4" class="form-check-input" id="checkbox4" value="1" />
                             <label class="form-check-label" for="Messenger4" style="margin-bottom: 4px;">Threema</label><br />
 							<!-- 5 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox5" name="checkbox5" value="yes" />
+                            <input type="checkbox" class="form-check-input" id="checkbox5" name="checkbox5" value="1" />
                             <label class="form-check-label" for="Messenger5" style="margin-bottom: 4px;">FB Messenger</label><br />
                         </div>
                         <div class="center" style="">

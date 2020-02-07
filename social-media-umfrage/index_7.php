@@ -7,15 +7,54 @@ $check5 = $_POST['checkbox5'];
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
-                     'smu2020.ddns.net',
+                    'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
 					 'umfrage'
                    );
 
-$sql = "insert into messengerdienste(MD_ID, Whatsapp, Snapchat, Telegram, Threema, Fbmessenger) values ('ip', '$check1', '$check2','$check3', '$check4', '$check5')";
+$sql = "insert into messengerdienste(m_ip, Whatsapp, Snapchat, Telegram, Threema, Fbmessenger) values ('$ip', '$check1', '$check2','$check3', '$check4', '$check5')";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
+$messenger = "SELECT * FROM messengerdienste, socialmediaapps Where s_ip='$ip' AND m_ip='$ip'";
+$erg = mysqli_query($link,$messenger) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+while ($row = mysqli_fetch_array($erg)) 
+{
+if($row['Whatsapp'] == '1')
+	$Whatsapp='"text"';
+	else $Whatsapp = '"hidden"';
+if($row['Snapchat'] == '1')
+	$Snapchat='"text"';
+	else $Snapchat = '"hidden"';
+if($row['Telegram'] == '1')
+	$Telegram='"text"';
+	else $Telegram = '"hidden"';
+if($row['Threema'] == '1')
+	$Threema='"text"';
+	else $Threema = '"hidden"';
+if($row['Fbmessenger'] == '1')
+	$Fbmessenger='"text"';
+	else $Fbmessenger = '"hidden"';
+if($row['Instagram'] == '1')
+	$Instagram='"text"';
+	else $Instagram = '"hidden"';
+if($row['Youtube'] == '1')
+	$Youtube='"text"';
+	else $Youtube = '"hidden"';
+if($row['Twitter'] == '1')
+	$Twitter='"text"';
+	else $Twitter = '"hidden"';
+if($row['Facebook'] == '1')
+	$Facebook='"text"';
+	else $Facebook = '"hidden"';
+if($row['Tiktok'] == '1')
+	$Tiktok='"text"';
+	else $Tiktok = '"hidden"';
+if($row['Pinterest'] == '1')
+	$Pinterest='"text"';
+	else $Pinterest = '"hidden"';
+}  
 
 ?>
 
@@ -67,28 +106,40 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                 <div class="frage">
                     <div class="h2" style="">Was ist deine geschätzte durchschnittliche tägliche Nutzungsdauer? (in min)</div>
                     <form method="post" action="index_8.php">
-                        <div class="form-check" style="">         
-                            <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
-                            <input name="checkbox2" value="no" type="hidden" />
-                            <input name="checkbox3" value="no" type="hidden" />
-			    <input name="checkbox4" value="no" type="hidden" />
-			    <input name="checkbox5" value="no" type="hidden" />
-                            
-                            <!-- 1 -->
-                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="yes" />
-                            <label class="form-check-label" for="Messenger11" style="margin-bottom: 4px;">platz</label><br />
-							<!-- 2 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" value="yes" />
-                            <label class="form-check-label" for="Messenger12" style="margin-bottom: 4px;">halter</label><br />
-							<!-- 3 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox3" value="yes"/>
-                            <label class="form-check-label" for="Messenger13" style="margin-bottom: 4px;">für</label><br />
-							<!-- 4 -->
-                            <input type="checkbox" name="checkbox4" class="form-check-input" id="checkbox4" value="yes" />
-                            <label class="form-check-label" for="Messenger14" style="margin-bottom: 4px;">später</label><br />
-							<!-- 5 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox5" name="checkbox5" value="yes" />
-                            <label class="form-check-label" for="Messenger15" style="margin-bottom: 4px;">siehe --> fragen --> Nr. 7</label><br />
+                        <div class="form-check" style="">   
+							<input name="Whatsapp" value="0" type="hidden" /> 	<!--Wird genutzt damit die Textfelder auch "null" sein können -->
+                            <input name="Snapchat" value="0" type="hidden" />
+                            <input name="Telegram" value="0" type="hidden" />
+							<input name="Threema" value="0" type="hidden" />
+							<input name="Fbmessenger" value="0" type="hidden" />
+							<input name="Instagram" value="0" type="hidden" />
+							<input name="Youtube" value="0" type="hidden" />
+                            <input name="Twitter" value="0" type="hidden" />
+							<input name="Facebook" value="0" type="hidden" />
+							<input name="Tiktok" value="0" type="hidden" />
+							<input name="Pinterest" value="0" type="hidden" />
+						
+							<input type=<?= $Whatsapp ?> name="Whatsapp" class="form-control" id="t1" placeholder="Whatsapp">
+							<br>
+							<input type=<?= $Snapchat ?> name="Snapchat" class="form-control" id="t1" placeholder="Snapchat">
+							<br>
+							<input type=<?= $Telegram ?> name="Telegram" class="form-control" id="t1" placeholder="Telegram">
+							<br>
+							<input type=<?= $Threema ?> name="Threema" class="form-control" id="t1" placeholder="Threema">
+							<br>
+							<input type=<?= $Fbmessenger ?> name="Fbmessenger" class="form-control" id="t1" placeholder="Facebook Messenger">
+							<br>
+							<input type=<?= $Instagram ?> name="Instagram" class="form-control" id="t1" placeholder="Instagram">
+							<br>
+							<input type=<?= $Youtube ?> name="Youtube" class="form-control" id="t1" placeholder="Youtube">
+							<br>
+							<input type=<?= $Twitter ?> name="Twitter" class="form-control" id="t1" placeholder="Twitter">
+							<br>
+							<input type=<?= $Facebook ?> name="Facebook" class="form-control" id="t1" placeholder="Facebook">
+							<br>
+							<input type=<?= $Tiktok ?> name="Tiktok" class="form-control" id="t1" placeholder="Tiktok">
+							<br>
+							<input type=<?= $Pinterest ?> name="Pinterest" class="form-control" id="t1" placeholder="Pinterest">
                         </div>
                         <div class="center" style="">
                         <a href="index_6.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>

@@ -1,13 +1,25 @@
 <?php
+$Whatsapp = $_POST['Whatsapp'];
+$Snapchat = $_POST['Snapchat'];
+$Telegram = $_POST['Telegram'];
+$Threema = $_POST['Threema'];
+$Fbmessenger = $_POST['Fbmessenger'];
+$Instagram = $_POST['Instagram'];
+$Youtube = $_POST['Youtube'];
+$Twitter = $_POST['Twitter'];
+$Facebook = $_POST['Facebook'];
+$Tiktok = $_POST['Tiktok'];
+$Pinterest = $_POST['Pinterest'];
+
 $ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
-                     'smu2020.ddns.net',
+                    'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
 					 'umfrage'
                    );
 
-$sql = "INSERT INTO nutzungsdauer ('') values=('')";
+$sql = "INSERT INTO nutzungsdauer (Instagram, YouTube, Twitter, Facebook, TikTok, Pinterest, WhatsApp, Snapchat, Telegram, Threema, FB_Messenger) VALUES ('$Instagram', '$Youtube', '$Twitter', '$Facebook', '$Tiktok', '$Pinterest', '$Whatsapp', '$Snapchat', '$Telegram', '$Threema', '$Fbmessenger')";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
