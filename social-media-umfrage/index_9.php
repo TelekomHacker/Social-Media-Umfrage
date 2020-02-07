@@ -62,21 +62,20 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="h2" style="">Ich kenne mehrere Personen denen ich meine Probleme anvertrauen kann</div>
                     <form method="post" action="index_10.php">
                         <div class="form-check" style="">         
-                            <input name="radiobox" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
                             
-                            <!-- 1 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="1" />
-                            <label class="form-check-label" for="Antwort1" style="margin-bottom: 4px;">auf jeden Fall</label><br />
-							<!-- 2 -->
-                            <input type="radio" class="form-check-input" id="checkbox2" name="radiobox" value="2" />
-                            <label class="form-check-label" for="Antwort2" style="margin-bottom: 4px;">wahrscheinlich ja</label><br />
-							<!-- 3 -->
-                            <input type="radio" class="form-check-input" id="checkbox3" name="radiobox" value="3"/>
-                            <label class="form-check-label" for="Antwort3" style="margin-bottom: 4px;">wahrscheinlich nein</label><br />
-							<!-- 4 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox4" value="4" />
-                            <label class="form-check-label" for="Antwort4" style="margin-bottom: 4px;">auf keinen Fall</label><br />
-                        </div>
+				
+                            </br>
+
+				<input name="range!" type="range" class="custom-range" min="0" max="10" step="0.2" id="customRange3">
+							
+			<nav>
+				<li style="margin-right: 28%">Auf jeden Fall</li>
+				<li>Auf keinen Fall</li>
+			</nav>
+							
+							
+			    
+			    </div>
                         <div class="center" style="">
                         <a href="index_8.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
                         <button type="submit" class="btn btn-outline-primary" >Weiter</button>
