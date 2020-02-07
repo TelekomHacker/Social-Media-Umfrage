@@ -107,3 +107,14 @@ body {
     margin: 0px auto;
     margin-top:20px;
 }
+
+
+.custom-range {
+	margin: 0px auto;
+	width: 45%;
+	margin-bottom:3px;
+}
+
+nav li {
+	display: inline;
+}
