@@ -6,10 +6,10 @@ $link = mysqli_connect (
                      'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
-					 'test'
+					 'umfrage'
                    );
 
-$sql = "insert into pipo(heheh, id) values ('$check1', '$ip')";
+$sql = "UPDATE fragen SET index16='$check1' WHERE id='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 

@@ -2,16 +2,19 @@
 $check1 = $_POST['checkbox1'];
 $check2 = $_POST['checkbox2'];
 $check3 = $_POST['checkbox3'];
+$check4 = $_POST['checkbox4'];
+$check5 = $_POST['checkbox5'];
+$check6 = $_POST['checkbox6'];
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
                      'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
-					 'test'
+					 'umfrage'
                    );
 
-$sql = "UPDATE pipo SET kekek='$check1'  WHERE id='$ip'";
+$sql = "insert into socialmediaapps(SM_ID, Instagram, Youtube, Twitter, Facebook, Tiktok, Pinterest) values ('ip', '$check1', '$check2','$check3', '$check4', '$check5', '$check6')";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 

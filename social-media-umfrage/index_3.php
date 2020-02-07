@@ -1,16 +1,15 @@
 <?php
 $check1 = $_POST['radiobox'];
 
-
 $ip = $_SERVER['REMOTE_ADDR'];
-$link = mysqli_connect (
+$link = mysqli_connect(
                      'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
-					 'test'
+					 'umfrage'
                    );
 
-$sql = "UPDATE pipo SET kekek='$check1'  WHERE id='$ip'";
+$sql = "UPDATE fragen SET index2='$check1' WHERE id='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
@@ -63,9 +62,6 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="h2" style="">Welchen Beruf &uuml;bst du aus?</div>
                     <form method="post" action="index_4.php">
                         <div class="form-check" style="">         
-                            <input name="andere" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
-
-                            
                             <!-- 1 -->
                             <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="Sch&uuml;ler" />
                             <label class="form-check-label" for="Beruf1" style="margin-bottom: 4px;">Sch&uuml;ler</label><br />

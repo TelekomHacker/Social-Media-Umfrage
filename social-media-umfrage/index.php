@@ -1,10 +1,4 @@
 <?php 
-//$db_link = mysqli_connect (
-//                     'smu2020.ddns.net',
-//                     'phpmyadmin',
-//                     'nigga234REAL!',
-//                     'test'
-//                    );
 
 ?>
 
@@ -92,27 +86,27 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             <label class="form-check-label" for="AltersGruppe1" style="">0 - 12</label><br />
 							<!-- 2 -->
                             <input type="radio" name="radiobox" class="form-check-input" id="checkbox2" value="13/14" />
-                            <label class="form-check-label" for="AltersGruppe2" style="">13/14</label><br />
+                            <label class="form-check-label" for="AltersGruppe2" style="">13/14</label>
 							<!-- 3 --></br>
                             <input type="radio" name="radiobox" class="form-check-input" id="checkbox3" value="15/16" />
                             <label class="form-check-label" for="AltersGruppe3" style="">15/16</label>
 							<!-- 4 --></br>
-			    <input type="radio" name="radiobox" class="form-check-input" id="checkbox4" value="17/18" />
+							<input type="radio" name="radiobox" class="form-check-input" id="checkbox4" value="17/18" />
                             <label class="form-check-label" for="AltersGruppe4" style="">17/18</label>
 							<!-- 5 --></br>
-			    <input type="radio" name="radiobox" class="form-check-input" id="checkbox5" value="19-21" />
+							<input type="radio" name="radiobox" class="form-check-input" id="checkbox5" value="19-21" />
                             <label class="form-check-label" for="AltersGruppe5" style="">19 - 21</label>
 							<!-- 6 --></br>
-			    <input type="radio" name="radiobox" class="form-check-input" id="checkbox6" value="22-30" />
+							<input type="radio" name="radiobox" class="form-check-input" id="checkbox6" value="22-30" />
                             <label class="form-check-label" for="AltersGruppe6" style="">22 - 30</label>
 							<!-- 7 --></br>
-			    <input type="radio" name="radiobox" class="form-check-input" id="checkbox7" value="31-40" />
+							<input type="radio" name="radiobox" class="form-check-input" id="checkbox7" value="31-40" />
                             <label class="form-check-label" for="AltersGruppe7" style="">31 - 40</label>
 							<!-- 8 --></br>
-			    <input type="radio" name="radiobox" class="form-check-input" id="checkbox8" value="41-50" />
+							<input type="radio" name="radiobox" class="form-check-input" id="checkbox8" value="41-50" />
                             <label class="form-check-label" for="AltersGruppe8" style="">41 - 50</label>
 							<!-- 9 --></br>
-			    <input type="radio" name="radiobox" class="form-check-input" id="checkbox9" value="51+" />
+							<input type="radio" name="radiobox" class="form-check-input" id="checkbox9" value="51+" />
                             <label class="form-check-label" for="AltersGruppe9" style="">51+</label>
                         </div>
                         <div class="center">

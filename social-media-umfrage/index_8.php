@@ -1,16 +1,13 @@
 <?php
-$check1 = $_POST['radiobox'];
-
-
 $ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
                      'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
-					 'test'
+					 'umfrage'
                    );
 
-$sql = "UPDATE pipo SET kekek='$check1'  WHERE id='$ip'";
+$sql = "INSERT INTO nutzungsdauer ('') values=('')";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
