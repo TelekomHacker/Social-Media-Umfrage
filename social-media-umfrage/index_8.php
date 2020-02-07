@@ -75,30 +75,31 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             <input name="radiobox" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
 
                             
+
                             <!-- 1 -->
                             <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="schwarz" />
-                            <label class="form-check-label" for="Farbe1" style="margin-bottom: 4px;">schwarz</label><br />
+                            <label class="form-check-label" for="Farbe1" style="margin-bottom: 4px; color: #000000">schwarz</label><br />
 							<!-- 2 -->
                             <input type="radio" class="form-check-input" id="checkbox2" name="radiobox" value="gr&uuml;n" />
-                            <label class="form-check-label" for="Farbe2" style="margin-bottom: 4px;">gr&uuml;n</label><br />
+                            <label class="form-check-label" for="Farbe2" style="margin-bottom: 4px; color:	#006600 ">gr&uuml;n</label><br />
 							<!-- 3 -->
                             <input type="radio" class="form-check-input" id="checkbox3" name="radiobox" value="rot"/>
-                            <label class="form-check-label" for="Farbe3" style="margin-bottom: 4px;">rot</label><br />
+                            <label class="form-check-label" for="Farbe3" style="margin-bottom: 4px; color: #ff0000">rot</label><br />
 							<!-- 4 -->
                             <input type="radio" name="radiobox" class="form-check-input" id="checkbox4" value="weiß" />
-                            <label class="form-check-label" for="Farbe4" style="margin-bottom: 4px;">weiß</label><br />
+                            <label class="form-check-label" for="Farbe4" style="margin-bottom: 4px; color: #ccccb3">weiß</label><br />
 							<!-- 5 -->
                             <input type="radio" class="form-check-input" id="checkbox5" name="radiobox" value="blau" />
-                            <label class="form-check-label" for="Farbe5" style="margin-bottom: 4px;">blau</label><br />
+                            <label class="form-check-label" for="Farbe5" style="margin-bottom: 4px; color: #0000ff">blau</label><br />
 							<!-- 6 -->
                             <input type="radio" name="radiobox" class="form-check-input" id="checkbox6" value="rosa" />
-                            <label class="form-check-label" for="Farbe6" style="margin-bottom: 4px;">rosa</label><br />
+                            <label class="form-check-label" for="Farbe6" style="margin-bottom: 4px; color: #FF69B4">rosa</label><br />
 							<!-- 7 -->
                             <input type="radio" class="form-check-input" id="checkbox7" name="radiobox" value="gelb" />
-                            <label class="form-check-label" for="Farbe7" style="margin-bottom: 4px;">gelb</label><br />
+                            <label class="form-check-label" for="Farbe7" style="margin-bottom: 4px; color:   #ffbf00">gelb</label><br />
 							<!-- 8 -->
                             <input type="radio" class="form-check-input" id="checkbox8" name="radiobox" value="gelb"/>
-                            <label class="form-check-label" for="Farbe8" style="margin-bottom: 4px;">violett</label><br />
+                            <label class="form-check-label" for="Farbe8" style="margin-bottom: 4px; color: #9900cc">violett</label><br />
 							<!-- 9 -->
                             <input type="radio" name="radiobox" class="form-check-input" id="checkbox9" value="andere" />
                             <label class="form-check-label" for="Farbe9" style="margin-bottom: 4px;">andere</label><br />
