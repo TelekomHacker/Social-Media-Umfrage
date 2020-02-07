@@ -1,5 +1,5 @@
 <?php
-$check1 = $_POST['radiobox'];
+$check1 = $_POST['range!'];
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
