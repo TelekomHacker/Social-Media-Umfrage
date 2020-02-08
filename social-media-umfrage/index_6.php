@@ -7,16 +7,10 @@ $check5 = $_POST['checkbox5'];
 $check6 = $_POST['checkbox6'];
 
 $ip = $_SERVER['REMOTE_ADDR'];
-$db_link = mysqli_connect (
-                    'smu2020.ddns.net',
+$link = mysqli_connect (
+                     'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
-					 'umfrage'
-                   );
-$link = mysqli_connect (
-                    '127.0.0.1',
-                     'root',
-					 '',
 					 'umfrage'
                    );
 				   
