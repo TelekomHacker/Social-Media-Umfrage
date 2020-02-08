@@ -6,54 +6,42 @@ $check4 = $_POST['checkbox4'];
 $check5 = $_POST['checkbox5'];
 
 $ip = $_SERVER['REMOTE_ADDR'];
-$link = mysqli_connect (
+$db_link = mysqli_connect (
                     'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
+					 'umfrage'
+                   );
+$link = mysqli_connect (
+                    '127.0.0.1',
+                     'root',
+					 '',
 					 'umfrage'
                    );
 
 $sql = "insert into messengerdienste(m_ip, Whatsapp, Snapchat, Telegram, Threema, Fbmessenger) values ('$ip', '$check1', '$check2','$check3', '$check4', '$check5')";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
-$messenger = "SELECT * FROM messengerdienste, socialmediaapps Where s_ip='$ip' AND m_ip='$ip'";
+$messenger = "SELECT * FROM messengerdienste Where m_ip='$ip'";
 $erg = mysqli_query($link,$messenger) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
 while ($row = mysqli_fetch_array($erg)) 
 {
 if($row['Whatsapp'] == '1')
-	$Whatsapp='"text"';
+	$Whatsapp='"number"';
 	else $Whatsapp = '"hidden"';
 if($row['Snapchat'] == '1')
-	$Snapchat='"text"';
+	$Snapchat='"number"';
 	else $Snapchat = '"hidden"';
 if($row['Telegram'] == '1')
-	$Telegram='"text"';
+	$Telegram='"number"';
 	else $Telegram = '"hidden"';
 if($row['Threema'] == '1')
-	$Threema='"text"';
+	$Threema='"number"';
 	else $Threema = '"hidden"';
 if($row['Fbmessenger'] == '1')
-	$Fbmessenger='"text"';
+	$Fbmessenger='"number"';
 	else $Fbmessenger = '"hidden"';
-if($row['Instagram'] == '1')
-	$Instagram='"text"';
-	else $Instagram = '"hidden"';
-if($row['Youtube'] == '1')
-	$Youtube='"text"';
-	else $Youtube = '"hidden"';
-if($row['Twitter'] == '1')
-	$Twitter='"text"';
-	else $Twitter = '"hidden"';
-if($row['Facebook'] == '1')
-	$Facebook='"text"';
-	else $Facebook = '"hidden"';
-if($row['Tiktok'] == '1')
-	$Tiktok='"text"';
-	else $Tiktok = '"hidden"';
-if($row['Pinterest'] == '1')
-	$Pinterest='"text"';
-	else $Pinterest = '"hidden"';
 }  
 
 ?>
@@ -104,7 +92,7 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
-                    <div class="h2" style="">Was ist deine geschätzte durchschnittliche tägliche Nutzungsdauer? (in min)</div>
+                    <div class="h2" style="">Was ist deine geschätzte durchschnittliche tägliche Nutzungsdauer bei Messengern? (in min)</div>
                     <form method="post" action="index_8.php">
                         <div class="form-check" style="">   
 							<input name="Whatsapp" value="0" type="hidden" /> 	<!--Wird genutzt damit die Textfelder auch "null" sein können -->
@@ -112,12 +100,6 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                             <input name="Telegram" value="0" type="hidden" />
 							<input name="Threema" value="0" type="hidden" />
 							<input name="Fbmessenger" value="0" type="hidden" />
-							<input name="Instagram" value="0" type="hidden" />
-							<input name="Youtube" value="0" type="hidden" />
-                            <input name="Twitter" value="0" type="hidden" />
-							<input name="Facebook" value="0" type="hidden" />
-							<input name="Tiktok" value="0" type="hidden" />
-							<input name="Pinterest" value="0" type="hidden" />
 						
 							<input type=<?= $Whatsapp ?> name="Whatsapp" class="form-control" id="t1" placeholder="Whatsapp">
 							<br>
@@ -128,18 +110,6 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
 							<input type=<?= $Threema ?> name="Threema" class="form-control" id="t1" placeholder="Threema">
 							<br>
 							<input type=<?= $Fbmessenger ?> name="Fbmessenger" class="form-control" id="t1" placeholder="Facebook Messenger">
-							<br>
-							<input type=<?= $Instagram ?> name="Instagram" class="form-control" id="t1" placeholder="Instagram">
-							<br>
-							<input type=<?= $Youtube ?> name="Youtube" class="form-control" id="t1" placeholder="Youtube">
-							<br>
-							<input type=<?= $Twitter ?> name="Twitter" class="form-control" id="t1" placeholder="Twitter">
-							<br>
-							<input type=<?= $Facebook ?> name="Facebook" class="form-control" id="t1" placeholder="Facebook">
-							<br>
-							<input type=<?= $Tiktok ?> name="Tiktok" class="form-control" id="t1" placeholder="Tiktok">
-							<br>
-							<input type=<?= $Pinterest ?> name="Pinterest" class="form-control" id="t1" placeholder="Pinterest">
                         </div>
                         <div class="center" style="">
                         <a href="index_6.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>

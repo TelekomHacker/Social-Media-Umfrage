@@ -4,23 +4,49 @@ $Snapchat = $_POST['Snapchat'];
 $Telegram = $_POST['Telegram'];
 $Threema = $_POST['Threema'];
 $Fbmessenger = $_POST['Fbmessenger'];
-$Instagram = $_POST['Instagram'];
-$Youtube = $_POST['Youtube'];
-$Twitter = $_POST['Twitter'];
-$Facebook = $_POST['Facebook'];
-$Tiktok = $_POST['Tiktok'];
-$Pinterest = $_POST['Pinterest'];
+
 
 $ip = $_SERVER['REMOTE_ADDR'];
-$link = mysqli_connect (
+$db_link = mysqli_connect (
                     'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
 					 'umfrage'
                    );
+$link = mysqli_connect (
+                    '127.0.0.1',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
 
-$sql = "INSERT INTO nutzungsdauer (Instagram, YouTube, Twitter, Facebook, TikTok, Pinterest, WhatsApp, Snapchat, Telegram, Threema, FB_Messenger) VALUES ('$Instagram', '$Youtube', '$Twitter', '$Facebook', '$Tiktok', '$Pinterest', '$Whatsapp', '$Snapchat', '$Telegram', '$Threema', '$Fbmessenger')";
+$sql = "INSERT INTO nutzungsdauer (n_ip, WhatsApp, Snapchat, Telegram, Threema, FB_Messenger) VALUES ('$ip', '$Whatsapp', '$Snapchat', '$Telegram', '$Threema', '$Fbmessenger')";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+$social = "SELECT * FROM socialmediaapps Where s_ip='$ip'";
+$erg = mysqli_query($link,$social) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+while ($row = mysqli_fetch_array($erg)) 
+{
+if($row['Instagram'] == '1')
+	$Instagram='"number"';
+	else $Instagram = '"hidden"';
+if($row['Youtube'] == '1')
+	$Youtube='"number"';
+	else $Youtube = '"hidden"';
+if($row['Twitter'] == '1')
+	$Twitter='"number"';
+	else $Twitter = '"hidden"';
+if($row['Facebook'] == '1')
+	$Facebook='"number"';
+	else $Facebook = '"hidden"';
+if($row['Tiktok'] == '1')
+	$Tiktok='"number"';
+	else $Tiktok = '"hidden"';
+if($row['Pinterest'] == '1')
+	$Pinterest='"number"';
+	else $Pinterest = '"hidden"';
+}  
 ?>
 
 <!DOCTYPE html>
@@ -69,40 +95,27 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="progress-bar" role="progressbar" style="width: 41%" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
-                    <div class="h2" style="">Was ist deine lieblingsfarbe?</div>
+                    <div class="h2" style="">Was ist deine geschätzte durchschnittliche tägliche Nutzungsdauer bei Social Media Apps? (in min)</div>
                     <form method="post" action="index_9.php">
                         <div class="form-check" style="">         
-                            <input name="radiobox" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
+							<input name="Instagram" value="0" type="hidden" />
+							<input name="Youtube" value="0" type="hidden" />
+                            <input name="Twitter" value="0" type="hidden" />
+							<input name="Facebook" value="0" type="hidden" />
+							<input name="Tiktok" value="0" type="hidden" />
+							<input name="Pinterest" value="0" type="hidden" />
 
-                            
-
-                            <!-- 1 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="schwarz" />
-                            <label class="form-check-label" for="Farbe1" style="margin-bottom: 4px; color: #000000">schwarz</label><br />
-							<!-- 2 -->
-                            <input type="radio" class="form-check-input" id="checkbox2" name="radiobox" value="gr&uuml;n" />
-                            <label class="form-check-label" for="Farbe2" style="margin-bottom: 4px; color:	#006600 ">gr&uuml;n</label><br />
-							<!-- 3 -->
-                            <input type="radio" class="form-check-input" id="checkbox3" name="radiobox" value="rot"/>
-                            <label class="form-check-label" for="Farbe3" style="margin-bottom: 4px; color: #ff0000">rot</label><br />
-							<!-- 4 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox4" value="weiß" />
-                            <label class="form-check-label" for="Farbe4" style="margin-bottom: 4px; color: #ccccb3">weiß</label><br />
-							<!-- 5 -->
-                            <input type="radio" class="form-check-input" id="checkbox5" name="radiobox" value="blau" />
-                            <label class="form-check-label" for="Farbe5" style="margin-bottom: 4px; color: #0000ff">blau</label><br />
-							<!-- 6 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox6" value="rosa" />
-                            <label class="form-check-label" for="Farbe6" style="margin-bottom: 4px; color: #FF69B4">rosa</label><br />
-							<!-- 7 -->
-                            <input type="radio" class="form-check-input" id="checkbox7" name="radiobox" value="gelb" />
-                            <label class="form-check-label" for="Farbe7" style="margin-bottom: 4px; color:   #ffbf00">gelb</label><br />
-							<!-- 8 -->
-                            <input type="radio" class="form-check-input" id="checkbox8" name="radiobox" value="gelb"/>
-                            <label class="form-check-label" for="Farbe8" style="margin-bottom: 4px; color: #9900cc">violett</label><br />
-							<!-- 9 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox9" value="andere" />
-                            <label class="form-check-label" for="Farbe9" style="margin-bottom: 4px;">andere</label><br />
+							<input type=<?= $Instagram ?> name="Instagram" class="form-control" id="t1" placeholder="Instagram">
+							<br>
+							<input type=<?= $Youtube ?> name="Youtube" class="form-control" id="t1" placeholder="Youtube">
+							<br>
+							<input type=<?= $Twitter ?> name="Twitter" class="form-control" id="t1" placeholder="Twitter">
+							<br>
+							<input type=<?= $Facebook ?> name="Facebook" class="form-control" id="t1" placeholder="Facebook">
+							<br>
+							<input type=<?= $Tiktok ?> name="Tiktok" class="form-control" id="t1" placeholder="Tiktok">
+							<br>
+							<input type=<?= $Pinterest ?> name="Pinterest" class="form-control" id="t1" placeholder="Pinterest">
                         </div>
                         <div class="center" style="">
                         <a href="index_7.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>

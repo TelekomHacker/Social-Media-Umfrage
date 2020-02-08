@@ -9,10 +9,9 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "UPDATE fragen SET index10='$check1' WHERE id='$ip'";
+$sql = "UPDATE fragen SET index17='$check1' WHERE id='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
-
 <!DOCTYPE html>
 <html lang="de">
 
@@ -56,33 +55,13 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
 	       <div class="header">
 	            <div class="h1" style="">Social Media Umfrage 2020 [Teil 2]</div>
 	            <div class="progress" style="">
-                    <div class="progress-bar" role="progressbar" style="width: 61%" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <div class="frage">
-                    <div class="h2" style="">Die Leute die ich kenne haben keinen Spaß an den Dingen die ich selbst gerne mache</div>
-                    <form method="post" action="index_13.php">
-                        <div class="form-check" style="">         
-                            <input name="radiobox" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
-                            
+                </br>
+				<div class="h1" style="">Vielen Dank für die Teinahme an unserer Umfrage!</div>
 				
-                            </br>
-
-				<input name="range!" type="range" class="custom-range" min="0" max="10" step="0.2" id="customRange3">
-							
-			<nav>
-				<li style="margin-right: 28%">Auf jeden Fall</li>
-				<li>Auf keinen Fall</li>
-			</nav>
-							
-							
-			    
-                        </div>
-                        <div class="center" style="">
-                        <a href="index_10.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
-                        <button type="submit" class="btn btn-outline-primary" >Weiter</button>
-                        </div>
-                    </form>
-                </div>
+				
+				
                 <div class="footer">
                 <a data-toggle="modal" href="#modal32">Disclaimer</a>
                 </div>

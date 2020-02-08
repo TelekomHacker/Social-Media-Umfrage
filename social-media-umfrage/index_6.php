@@ -7,12 +7,20 @@ $check5 = $_POST['checkbox5'];
 $check6 = $_POST['checkbox6'];
 
 $ip = $_SERVER['REMOTE_ADDR'];
-$link = mysqli_connect (
+$db_link = mysqli_connect (
                     'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
 					 'umfrage'
                    );
+$link = mysqli_connect (
+                    '127.0.0.1',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
+				   
+		
 
 $sql = "insert into socialmediaapps(s_ip, Instagram, Youtube, Twitter, Facebook, Tiktok, Pinterest) values ('$ip', '$check1', '$check2','$check3', '$check4', '$check5', '$check6')";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));

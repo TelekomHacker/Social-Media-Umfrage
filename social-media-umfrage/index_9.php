@@ -1,15 +1,26 @@
 <?php
-$check1 = $_POST['radiobox'];
+$Instagram = $_POST['Instagram'];
+$Youtube = $_POST['Youtube'];
+$Twitter = $_POST['Twitter'];
+$Facebook = $_POST['Facebook'];
+$Tiktok = $_POST['Tiktok'];
+$Pinterest = $_POST['Pinterest'];
 
 $ip = $_SERVER['REMOTE_ADDR'];
-$link = mysqli_connect (
-                     'smu2020.ddns.net',
+$db_link = mysqli_connect (
+                    'smu2020.ddns.net',
                      'phppage',
 					 'R2*jz24oNU@.y8',
 					 'umfrage'
                    );
+$link = mysqli_connect (
+                    '127.0.0.1',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
 
-$sql = "UPDATE fragen SET index8='$check1' WHERE id='$ip'";
+$sql = "UPDATE nutzungsdauer SET Instagram='$Instagram', YouTube='$Youtube', Twitter='$Twitter', Facebook='$Facebook', TikTok='$Tiktok', Pinterest='$Pinterest' WHERE n_ip = '$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
@@ -54,30 +65,48 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
 	
 	   <div class="wrapper">
 	       <div class="header">
-	            <div class="h1" style="">Social Media Umfrage 2020 [Teil 2]</div>
+	            <div class="h1" style="">Social Media Umfrage 2020</div>
 	            <div class="progress" style="">
-                    <div class="progress-bar" role="progressbar" style="width: 48" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 41%" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
-                    <div class="h2" style="">Ich kenne mehrere Personen denen ich meine Probleme anvertrauen kann</div>
+                    <div class="h2" style="">Was ist deine lieblingsfarbe?</div>
                     <form method="post" action="index_10.php">
                         <div class="form-check" style="">         
-                            
-				
-                            </br>
+                            <input name="radiobox" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
 
-				<input name="range!" type="range" class="custom-range" min="0" max="10" step="0.2" id="customRange3">
-							
-			<nav>
-				<li style="margin-right: 28%">Auf jeden Fall</li>
-				<li>Auf keinen Fall</li>
-			</nav>
-							
-							
-			    
-			    </div>
+                            
+
+                            <!-- 1 -->
+                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="schwarz" />
+                            <label class="form-check-label" for="Farbe1" style="margin-bottom: 4px; color: #000000">schwarz</label><br />
+							<!-- 2 -->
+                            <input type="radio" class="form-check-input" id="checkbox2" name="radiobox" value="gr&uuml;n" />
+                            <label class="form-check-label" for="Farbe2" style="margin-bottom: 4px; color:	#006600 ">gr&uuml;n</label><br />
+							<!-- 3 -->
+                            <input type="radio" class="form-check-input" id="checkbox3" name="radiobox" value="rot"/>
+                            <label class="form-check-label" for="Farbe3" style="margin-bottom: 4px; color: #ff0000">rot</label><br />
+							<!-- 4 -->
+                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox4" value="weiß" />
+                            <label class="form-check-label" for="Farbe4" style="margin-bottom: 4px; color: #ccccb3">weiß</label><br />
+							<!-- 5 -->
+                            <input type="radio" class="form-check-input" id="checkbox5" name="radiobox" value="blau" />
+                            <label class="form-check-label" for="Farbe5" style="margin-bottom: 4px; color: #0000ff">blau</label><br />
+							<!-- 6 -->
+                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox6" value="rosa" />
+                            <label class="form-check-label" for="Farbe6" style="margin-bottom: 4px; color: #FF69B4">rosa</label><br />
+							<!-- 7 -->
+                            <input type="radio" class="form-check-input" id="checkbox7" name="radiobox" value="gelb" />
+                            <label class="form-check-label" for="Farbe7" style="margin-bottom: 4px; color:   #ffbf00">gelb</label><br />
+							<!-- 8 -->
+                            <input type="radio" class="form-check-input" id="checkbox8" name="radiobox" value="gelb"/>
+                            <label class="form-check-label" for="Farbe8" style="margin-bottom: 4px; color: #9900cc">violett</label><br />
+							<!-- 9 -->
+                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox9" value="andere" />
+                            <label class="form-check-label" for="Farbe9" style="margin-bottom: 4px;">andere</label><br />
+                        </div>
                         <div class="center" style="">
-                        <a href="index_8.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
+                        <a href="index_7.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
                         <button type="submit" class="btn btn-outline-primary" >Weiter</button>
                         </div>
                     </form>
