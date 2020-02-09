@@ -6,12 +6,17 @@ Social Media Nutzungsverhalten:
 - Welche Apps
 - 
 
-Disclaimer:
+
+Disclaimer: (bereits veraltet)
 "like ungefähr so:"
 Dies ist ein Schulprojekt des Informatik LK des Gymnasium Stift Keppel.
 Die folgenden Fragen werden Anonym ausgewertet und haben ausdrücklich nicht zwangsweise etwas miteinander zu tun.
 Dies soll die Auswertung in ihrer endgültigen Qualität verbessern. 
 Allgemein ist das Thema unserer Online-Umfrage die aktuelle Nutzungsweise von Socialmedia, im Vergleich aller Altersklassen.
+
+
+
+
 
 
 Fragen:
@@ -59,7 +64,41 @@ Fragen:
 8. Was ist deine geschätzte durchschnittliche tägliche Nutzungsdauer bei Social media? (in min)
 ->"pop up check-boxen, je nach dem was angeklckt wurde"  (Je App extra Zeitangabe?)
 
-9. Was ist deine lieblingsfarbe?
+9. wozu benutz du social media? (mehrfachnennung)
+->memes
+->beruflich
+->stars
+->rapper
+->sonstigen promimenten folgen
+->freunde 
+->bilder hochladen
+->folgst du lifestyle bloggern?
+
+10. fühlst du einen "drang" ein neues bild hochzuladen, wenn du das länger schon nicht mehr getan hast?
+->Ja
+->öfters
+->selten
+->nie
+
+11. hast du dich schonmal dazu eintschieden eine pause von social media zu machen?
+->Ja
+    collapse: Wie hast du dich wärend dieser Zeit gefühlt?
+    ->glücklicher
+    ->keine veränderung
+    ->unglücklicher
+->Nein
+
+12. Fühlst du dich als würdest du etwas verpassen, wenn du für ein paar tage nicht auf social media bist? [Fear of missing out(FOMO)]
+-> Ja absolut
+-> Ja manchmal
+-> Nein, eigentlich nicht
+-> Nein, absolut nicht
+
+13. Konntest du schonmal feststellen, dass du schlechter gelaunt warst, nachdem du mal viel zeit auf social media verbracht hast?
+->Ja
+->Nein
+
+14. Was ist deine lieblingsfarbe?
 ->Schwarz
 ->Grün
 ->Rot
@@ -70,58 +109,82 @@ Fragen:
 ->Violett
 ->Gelb
 ->Andere
-    "evtl. entsprechende Farben daneben anzeigen"
-
+    "evtl. entsprechende Farben daneben anzeigen" (abgehakt)
 
 ---------------Trennung Teil 2 mit bezug auf soziales Umfeld und persönliche Befinden in ich form(Zwischenseite mit Hinweis zur abtrennung)---------------
 
-slides zur auswahl?
+slides zur auswahl:
 
-9. Ich kenne mehrere Personen denen ich meine Probleme anvertrauen kann
+15. sind deine freunde ebenfalls auf social media?   (5 Raster?)
+->Alle
+bis
+->keine
+
+16. Ich kenne mehrere Personen denen ich meine Probleme anvertrauen kann
 ->Auf jeden Fall
 bis
 ->Auf keinen Fall
 
-10. Ich werde nicht oft eingeladen etwas mit anderen zu unternehmen
+17. Ich werde nicht oft eingeladen etwas mit anderen zu unternehmen
 ->Auf jeden Fall
 bis
 ->Auf keinen Fall
 
-11. Die Leute die ich kenne haben keinen Spaß an den Dingen die ich selbst gerne mache
+18. Die Leute die ich kenne haben keinen Spaß an den Dingen die ich selbst gerne mache
+->Auf jeden Fall
+bis
+->Auf keinen Fall
+
+19. Ich treffe oft Familie und Freunde um zu reden (online/offline)   "unterschedung?"
+->Auf jeden Fall
+bis
+->Auf keinen Fall
+
+20. Wie schätzt du dich selbst ein?
+->Selbstbewusst
+bis
+->schüchtern
+
+21. Ich führe engere Freundschften als es die meisten Leute machen
+->Auf jeden Fall
+bis
+->Auf keinen Fall
+
+22. Wenn ich gerne einen Tagesausflug machen möchte finde ich schnell Begleiter
 ->Auf jeden Fall
 bis
 ->Auf keinen Fall
 
 
-12. Ich treffe oft Familie und Freunde um zu reden (online/offline)   "unterschedung?"
+23. Mein Umfeld hat wenig Vertrauen in (meine Versprechen/mich) "was ist besser?"
 ->Auf jeden Fall
 bis
 ->Auf keinen Fall
 
-
-13. Ich führe engere Freundschften als es die meisten Leute machen
-->Auf jeden Fall
+24.Wie zufrieden bist du mit deiner aktuellen lebenssituation?
+->Komplett zufrieden
 bis
-->Auf keinen Fall
+->Total unzufrienden
 
-14. Wenn ich gerne einen Tagesausflug machen möchte finde ich schnell Begleiter
-->Auf jeden Fall
-bis
-->Auf keinen Fall
-
-
-15. Mein Umfeld hat wenig Vertrauen in (meine Versprechen/mich) "was ist besser?"
-->Auf jeden Fall
-bis
-->Auf keinen Fall
-
-
-16. Wie oft fühlst du dich müde und kraftlos?
+25. Wie oft fühlst du dich müde und kraftlos?
 Oft bis nie
 
 
-17. Wie oft fühlst du dich alleine?
+26. Wie oft fühlst du dich alleine?
 Oft bis nie
+
+--------------Ende slide-------------
+
+27.denkst du, dass social media einen einfluss auf deine stimmung und mentale gesundheit hat?
+->Ja, da bin ich mir sicher
+    ..>collapse: Bitte begründe dies kurz (optional)
+        -> "Textfeld"
+->Ich weiß nicht
+    ..>collapse: Bitte begründe dies kurz (optional)
+        -> "Textfeld"
+->Nein, das kann aufkeinen Fall sein
+    ..>collapse: Bitte begründe dies kurz (optional)
+        -> "Textfeld"
 
 
 
