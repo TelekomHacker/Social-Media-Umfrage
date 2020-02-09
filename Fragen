@@ -38,7 +38,9 @@ Fragen:
 ->keine Angabe
 
 3. Welchen Beruf übst du aus?
--> "Textfeld"
+->Schüler
+->Student
+->Anderes: "Textfeld"
 
 4. Was ist/war dein Lieblingsfach in der Schule?
 -> "Textfeld"
@@ -67,20 +69,18 @@ Fragen:
 9. wozu benutz du social media? (mehrfachnennung)
 ->memes
 ->beruflich
-->stars
-->rapper
-->sonstigen promimenten folgen
+->stars/promimenten
 ->freunde 
 ->bilder hochladen
-->folgst du lifestyle bloggern?
+->lifestyle bloggern folgen
 
-10. fühlst du den "drang" ein neues bild hochzuladen, wenn du das länger schon nicht mehr getan hast?
+10. Fühlst du den "drang" ein neues bild hochzuladen, wenn du das länger schon nicht mehr getan hast?
 ->Ja
-->ja, manchmal
-->eher nicht
-->gar nicht
+->Ja, manchmal
+->Eher nicht
+->Gar nicht
 
-11. hast du dich schonmal dazu eintschieden eine pause von social media zu machen?
+11.Hast du dich schonmal dazu eintschieden eine pause von social media zu machen?
 ->Ja
     collapse: Wie hast du dich wärend dieser Zeit gefühlt?
     ->glücklicher
@@ -135,31 +135,31 @@ bis
 bis
 ->Auf keinen Fall
 
-19. Ich treffe oft Familie und Freunde um zu reden (online/offline)   "unterschedung?"
+19. Ich treffe oft Familie und Freunde um zu reden (online/offline)   "unterscheidung?"
 ->Auf jeden Fall
 bis
 ->Auf keinen Fall
 
-20. Wie schätzt du dich selbst ein?
-->Selbstbewusst
-bis
-->schüchtern
-
-21. Ich führe engere Freundschaften als es die meisten Leute machen
+20. Ich führe engere Freundschaften als es die meisten Leute machen         (korrektur index 14 nötig!!!!!)
 ->Auf jeden Fall
 bis
 ->Auf keinen Fall
 
-22. Wenn ich gerne einen Tagesausflug machen möchte finde ich schnell Begleiter
+21. Wenn ich gerne einen Tagesausflug machen möchte finde ich schnell Begleiter
 ->Auf jeden Fall
 bis
 ->Auf keinen Fall
 
-
-23. Mein Umfeld hat wenig Vertrauen in (meine Versprechen/mich) "was ist besser?"
+22. Mein Umfeld hat wenig Vertrauen in (meine Versprechen/mich) "was ist besser?"
 ->Auf jeden Fall
 bis
+
 ->Auf keinen Fall
+
+23. Ich fühle mich in meinem Körper
+->wohl
+bis
+->nicht wohl
 
 24.Wie zufrieden bist du mit deiner aktuellen lebenssituation?
 ->Komplett zufrieden
@@ -167,10 +167,15 @@ bis
 ->Total unzufrienden
 
 25. Wie oft fühlst du dich müde und kraftlos?
-Oft bis nie
+->Oft
+bis 
+->nie
+
 
 26. Wie oft fühlst du dich alleine?
-Oft bis nie
+->Oft 
+bis 
+->nie
 
 --------------Ende slide-------------
 
