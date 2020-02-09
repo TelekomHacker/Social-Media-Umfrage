@@ -115,6 +115,13 @@ body {
 	margin-bottom:3px;
 }
 
+.form-control {
+	text-align: center;
+	margin: 0px auto;
+	width: 70%;
+ 
+}
+
 nav li {
 	display: inline;
 }
