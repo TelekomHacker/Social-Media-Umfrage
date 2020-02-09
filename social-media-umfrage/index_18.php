@@ -83,8 +83,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Ich fühle mich oft alleine</div>
                     <form method="post" action="index_19.php">
                         <div class="form-check" style="">         
-                            <input name="radiobox" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
-                           
+                            
 				
                             </br>
 
