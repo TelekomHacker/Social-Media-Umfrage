@@ -62,7 +62,7 @@ Wo sind die, die vor uns auf der Welt waren? Geht in die obere Welt, geht in die
                     <div class="h2" style="">Mein Umfeld hat wenig Vertrauen in meine Versprechen</div>
                     <form method="post" action="index_17.php">
                         <div class="form-check" style="">         
-                            < <input name="radiobox" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
+                            
                            
 				
                             </br>
