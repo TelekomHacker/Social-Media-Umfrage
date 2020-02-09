@@ -82,9 +82,10 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Was ist/war dein Lieblingsfach in der Schule?</div>
                     <form method="post" action="index_5.php">
                           <div class="form-group">
-								<label for="exampleFormControlInput1">Lieblingsfach</label>
-								<input type="text" name="Lieblingsfach" class="form-control" id="t1" placeholder="Bitte hier eingeben">
+	 
+								<input type="text" name="Lieblingsfach" class="form-control" id="t1" placeholder="Lieblingsfach bitte hier eingeben">
 							</div>
+							<br>
                         <div class="center" style="">
                         <a href="index_3.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
                         <button type="submit" class="btn btn-outline-primary" >Weiter</button>
