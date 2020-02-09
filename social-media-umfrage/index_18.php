@@ -80,7 +80,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="progress-bar" role="progressbar" style="width: 94.38%" aria-valuenow="94.38" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
-                    <div class="h2" style="">Ich fühle mich oft alleine</div>
+                    <div class="h2" style="">Wie oft fühlst du dich alleine?</div>
                     <form method="post" action="index_19.php">
                         <div class="form-check" style="">         
                             
