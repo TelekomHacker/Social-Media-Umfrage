@@ -12,10 +12,12 @@ body {
 .wrapper {
     margin: 0px auto;
     width: 75%;
-    border-width: 1px;
-    border-radius: 4px;
+    border-width: 2px;
+    border-radius: 10px;
     border-style: solid;
-    border-color: #dedede;
+    border-color: #585858;
+    background-color: #FAFAFA;
+	
 }
 
 .modal-title {
