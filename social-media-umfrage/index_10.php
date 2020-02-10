@@ -1,4 +1,22 @@
+<?php
+$check1 = $_POST['checkbox1'];
+$check2 = $_POST['checkbox2'];
+$check3 = $_POST['checkbox3'];
+$check4 = $_POST['checkbox4'];
+$check5 = $_POST['checkbox5'];
 
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'smu2020.ddns.net',
+                     'phppage',
+					 'R2*jz24oNU@.y8',
+					 'umfrage'
+                   );
+
+$sql = "insert into nutzungsgruende(nutzungs_ip, Memes, Beruflich, Stars, Bilder, Lifestyle) values ('$ip', '$check1', '$check2','$check3', '$check4', '$check5')";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+?>
 <!DOCTYPE html>
 <html lang="de">
 

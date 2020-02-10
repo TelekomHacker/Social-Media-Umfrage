@@ -9,8 +9,8 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "UPDATE fragen SET index15='$check1' WHERE id='$ip'";
-//$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+$sql = "UPDATE fragen SET index_24='$check1' WHERE id='$ip'";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
 <!DOCTYPE html>

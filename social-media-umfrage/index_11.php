@@ -1,3 +1,17 @@
+<?php
+$check1 = $_POST['radiobox'];
+
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'smu2020.ddns.net',
+                     'phppage',
+					 'R2*jz24oNU@.y8',
+					 'umfrage'
+                   );
+
+$sql = "UPDATE fragen SET index_10='$check1' WHERE id='$ip'";
+//$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+?>
 <!DOCTYPE html>
 <html lang="de">
 
@@ -71,8 +85,8 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							
 
 						<p>
-								<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >Ja</a>
-								<button type="button" class="btn btn-primary">Nein</button>
+								<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" > Ja </a>
+								<button type="button" class="btn btn-primary" name="Nein">Nein</button>
 						</p>
 						<div class="row">
 							<div class="col">
@@ -81,6 +95,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 									
 									Wie hast du dich wärend dieser Zeit gefühlt?
 									
+							<input type="hidden" name="radiobox"value="0" /> <!-- Falls Nein gedrückt wurde -->
 										<!-- 1 -->
 							<div class="custom-control custom-radio">
 								<input type="radio" name="radiobox" class="custom-control-input" id="customRadio1" value="1" />

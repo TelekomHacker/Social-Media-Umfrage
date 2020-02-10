@@ -1,3 +1,17 @@
+<? php
+$check1 = $_POST['range!'];
+
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'smu2020.ddns.net',
+                     'phppage',
+					 'R2*jz24oNU@.y8',
+					 'umfrage'
+                   );
+
+$sql = "UPDATE fragen SET index_26='$check1' WHERE id='$ip'";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+?>
 <!DOCTYPE html>
 <html lang="de">
 

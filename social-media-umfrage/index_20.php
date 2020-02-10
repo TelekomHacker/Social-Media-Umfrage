@@ -9,7 +9,7 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "UPDATE fragen SET index12='$check1' WHERE id='$ip'";
+$sql = "UPDATE fragen SET index_19='$check1' WHERE id='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 

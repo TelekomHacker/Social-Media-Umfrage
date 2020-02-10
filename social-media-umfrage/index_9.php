@@ -87,7 +87,11 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Wozu benutzt du Social Media? (Mehrfachnennung möglich)</div>
                     <form method="post" action="index_10.php">
                         <div class="form-check" style="">         
-
+							<input name="checkbox1" value="0" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
+                            <input name="checkbox2" value="0" type="hidden" />
+							<input name="checkbox3" value="0" type="hidden" />
+							<input name="checkbox4" value="0" type="hidden" />
+							<input name="checkbox5" value="0" type="hidden" />
                             
                             <!-- 1 -->
 							<div class="custom-control custom-checkbox">
