@@ -99,7 +99,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                         </div>
                         <div class="center" style="">
                         <a href="index_25.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
-                        <button type="submit" class="btn btn-outline-primary" >Abgeben</button>
+                        <button type="submit" class="btn btn-outline-primary" >weiter</button>
                         </div>
                     </form>
                 </div>
