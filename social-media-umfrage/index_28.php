@@ -1,16 +1,66 @@
-<? php
+<?php
 $check1 = $_POST['radiobox'];
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
-                     'smu2020.ddns.net',
-                     'phppage',
-					 'R2*jz24oNU@.y8',
-					 'umfrage'
-                   );
+//                     'smu2020.ddns.net',
+//                    'phppage',
+//					 'R2*jz24oNU@.y8',
+//					 'umfrage'
+//                   );
+				   			   
 
 $sql = "UPDATE fragen SET index_27='$check1' WHERE id='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+$id1 = "SELECT F_ID FROM fragen Where id='$ip'";
+$result1 = mysqli_query($link,$id1) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+while ($row = mysqli_fetch_assoc($result1)) 
+{
+	$s1=$row['F_ID'];
+}  
+$id2 = "SELECT M_ID FROM messengerdienste Where m_ip='$ip'";
+
+$result2 = mysqli_query($link,$id2) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+while ($row2 = mysqli_fetch_assoc($result2)) 
+{
+	$s2=$row2['M_ID'];
+}  
+
+$id3 = "SELECT ND_ID FROM nutzungsdauer Where n_ip='$ip'";
+$result3 = mysqli_query($link,$id3) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+while ($row3 = mysqli_fetch_assoc($result3)) 
+{
+	$s3=$row3['ND_ID'];
+}  
+
+$id4 = "SELECT NG_ID FROM nutzungsgruende Where nt_ip='$ip'";
+$result4 = mysqli_query($link,$id4) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+while ($row4 = mysqli_fetch_assoc($result4)) 
+{
+	$s4=$row4['NG_ID'];
+}  
+
+$id5 = "SELECT S_ID FROM socialmediaapps Where s_ip='$ip'";
+$result5 = mysqli_query($link,$id5) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+while ($row5 = mysqli_fetch_assoc($result5)) 
+{
+	$s5=$row5['S_ID'];
+}  
+$update1 = "UPDATE fragen SET id='$s1' WHERE id='$ip'";
+$update11 = mysqli_query($link,$update1) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+$update2 = "UPDATE messengerdienste SET M_ID='$s2' WHERE m_ip='$ip'";
+$update22 = mysqli_query($link,$update2) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+$update3 = "UPDATE nutzungsdauer SET ND_ID='$s3' WHERE n_ip='$ip'";
+$update33 = mysqli_query($link,$update3) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+$update4 = "UPDATE nutzungsgruende SET NG_ID='$s4' WHERE nt_ip='$ip'";
+$update44 = mysqli_query($link,$update4) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+$update5 = "UPDATE socialmediaapps SET S_ID='$s1' WHERE s_ip='$ip'";
+$update55 = mysqli_query($link,$update5) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
 <!DOCTYPE html>

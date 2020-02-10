@@ -10,7 +10,7 @@ $link = mysqli_connect (
                    );
 
 $sql = "UPDATE fragen SET index_10='$check1' WHERE id='$ip'";
-//$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 <!DOCTYPE html>
 <html lang="de">
