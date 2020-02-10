@@ -76,7 +76,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 	       <div class="header">
 	            <div class="h1" style="">Social Media Umfrage 2020 [Teil 2]</div>
 	            <div class="progress" style="">
-                    <div class="progress-bar" role="progressbar" style="width: 88.82%" aria-valuenow="88.82" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 85.714%" aria-valuenow="85.714" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
                     <div class="h2" style="">Wie oft fühlst du dich müde und kraftlos?</div>

@@ -76,7 +76,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 	       <div class="header">
 	            <div class="h1" style="">Social Media Umfrage 2020 [Teil 2]</div>
 	            <div class="progress" style="">
-                    <div class="progress-bar" role="progressbar" style="width: 77.72%" aria-valuenow="77.72" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 71.429%" aria-valuenow="71.429" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
                     <div class="h2" style="">Wenn ich gerne einen Tagesausflug machen möchte finde ich schnell Begleiter</div>

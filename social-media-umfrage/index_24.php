@@ -75,7 +75,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 	       <div class="header">
 	            <div class="h1" style="">Social Media Umfrage 2020 [Teil 2]</div>
 	            <div class="progress" style="">
-                    <div class="progress-bar" role="progressbar" style="width: 49.97%" aria-valuenow="49.97" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 82.143%" aria-valuenow="82.143" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
                     <div class="h2" style="">Wie zufrieden bist du mit deiner aktuellen Lebenssituation?</div>

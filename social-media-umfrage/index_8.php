@@ -106,7 +106,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 	       <div class="header">
 	            <div class="h1" style="">Social Media Umfrage 2020</div>
 	            <div class="progress" style="">
-                    <div class="progress-bar" role="progressbar" style="width: 38.86%" aria-valuenow="38.86" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
                     <div class="h2" style="">Was ist deine geschätzte durchschnittliche tägliche Nutzungsdauer bei Social Media Apps? (in min)</div>

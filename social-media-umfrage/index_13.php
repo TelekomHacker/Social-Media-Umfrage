@@ -76,7 +76,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 	       <div class="header">
 	            <div class="h1" style="">Social Media Umfrage 2020</div>
 	            <div class="progress" style="">
-                    <div class="progress-bar" role="progressbar" style="width: 5.55%" aria-valuenow="5.55" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 42.857%" aria-valuenow="42.857" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
                     <div class="h2" style="">Konntest du schonmal feststellen, dass du schlechter gelaunt warst, nachdem du mal viel zeit auf social media verbracht hast?</div>
