@@ -82,23 +82,28 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Welchem  biologischen Geschlecht fühlst du dich zugehörig?</div>
                     <form method="post" action="index_3.php">
                         <div class="form-check" style="">         
-                            <input name="checkbox1" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
-                            <input name="checkbox2" value="no" type="hidden" />
-                            <input name="checkbox3" value="no" type="hidden" />
-                            <input name="checkbox4" value="no" type="hidden" />
+
 				
                             <!-- 1 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="männlich" />
-                            <label class="form-check-label" for="Geschlecht1" style="margin-bottom: 4px;">männlich</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio1" value="1" />
+                            <label class="custom-control-label" for="customRadio1" style="">Männlich</label>
+							</div>
 							<!-- 2 -->
-                            <input type="radio" class="form-check-input" id="exampleCheck2" name="radiobox" value="weiblich" />
-                            <label class="form-check-label" for="Geschlecht2" style="margin-bottom: 4px;">weiblich</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio2" value="2" />
+                            <label class="custom-control-label" for="customRadio2" style="">Weiblich</label>
+							</div>
 							<!-- 3 -->
-                            <input type="radio" class="form-check-input" id="exampleCheck3" name="radiobox" value="divers"/>
-                            <label class="form-check-label" for="Geschlecht3" style="margin-bottom: 4px;">divers</label><br />
-							<!-- 3 -->
-                            <input type="radio" class="form-check-input" id="exampleCheck4" name="radiobox" value="keine Angabe"/>
-                            <label class="form-check-label" for="Geschlecht4" style="margin-bottom: 4px;">keine Angabe</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio3" value="3" />
+                            <label class="custom-control-label" for="customRadio3" style="">Divers</label>
+							</div>
+							<!-- 4 -->
+							<div class="custom-control custom-radio">
+							<input type="radio" name="radiobox" class="custom-control-input" id="customRadio4" value="4" />
+                            <label class="custom-control-label" for="customRadio4" style="">keine angabe</label>
+							</div>
                         </div>
                         <div class="center" style="">
                         <a href="index.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>

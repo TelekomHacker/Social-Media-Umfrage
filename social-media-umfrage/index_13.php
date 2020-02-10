@@ -71,12 +71,12 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                         <div class="form-check" style="">         
                             <!-- 1 -->
 							<div class="custom-control custom-radio">
-								<input type="radio" name="radiobox" class="custom-control-input" id="customRadio1" value="Ja" />
+								<input type="radio" name="radiobox" class="custom-control-input" id="customRadio1" value="1" />
 								<label class="custom-control-label" for="customRadio1" style="margin-bottom: 4px;">Ja</label><br />
 							</div>
 							<!-- 2 -->
                             <div class="custom-control custom-radio">
-								<input type="radio" name="radiobox" class="custom-control-input" id="customRadio2" value="Nein" />
+								<input type="radio" name="radiobox" class="custom-control-input" id="customRadio2" value="2" />
 								<label class="custom-control-label" for="customRadio2" style="margin-bottom: 4px;">Nein</label><br />
 							</div>
 							</div>                       

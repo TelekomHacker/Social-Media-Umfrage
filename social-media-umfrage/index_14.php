@@ -72,32 +72,50 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                             
 
                             <!-- 1 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="schwarz" />
-                            <label class="form-check-label" for="Farbe1" style="margin-bottom: 4px; color: #000000">schwarz</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio1" value="1" />
+                            <label class="custom-control-label" for="customRadio1" style="margin-bottom: 4px; color: #000000">schwarz</label><br />
+							</div>
 							<!-- 2 -->
-                            <input type="radio" class="form-check-input" id="checkbox2" name="radiobox" value="gr&uuml;n" />
-                            <label class="form-check-label" for="Farbe2" style="margin-bottom: 4px; color:	#006600 ">gr&uuml;n</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customRadio2" name="radiobox" value="2" />
+                            <label class="custom-control-label" for="customRadio2" style="margin-bottom: 4px; color:	#006600 ">gr&uuml;n</label><br />
+							</div>
 							<!-- 3 -->
-                            <input type="radio" class="form-check-input" id="checkbox3" name="radiobox" value="rot"/>
-                            <label class="form-check-label" for="Farbe3" style="margin-bottom: 4px; color: #ff0000">rot</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customRadio3" name="radiobox" value="3"/>
+                            <label class="custom-control-label" for="customRadio3" style="margin-bottom: 4px; color: #ff0000">rot</label><br />
+							</div>
 							<!-- 4 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox4" value="weiß" />
-                            <label class="form-check-label" for="Farbe4" style="margin-bottom: 4px; color: #ccccb3">weiß</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio4" value="4" />
+                            <label class="custom-control-label" for="customRadio4" style="margin-bottom: 4px; color: #ccccb3">weiß</label><br />
+							</div>
 							<!-- 5 -->
-                            <input type="radio" class="form-check-input" id="checkbox5" name="radiobox" value="blau" />
-                            <label class="form-check-label" for="Farbe5" style="margin-bottom: 4px; color: #0000ff">blau</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customRadio5" name="radiobox" value="5" />
+                            <label class="custom-control-label" for="customRadio5" style="margin-bottom: 4px; color: #0000ff">blau</label><br />
+							</div>
 							<!-- 6 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox6" value="rosa" />
-                            <label class="form-check-label" for="Farbe6" style="margin-bottom: 4px; color: #FF69B4">rosa</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio6" value="6" />
+                            <label class="custom-control-label" for="customRadio6" style="margin-bottom: 4px; color: #FF69B4">rosa</label><br />
+							</div>
 							<!-- 7 -->
-                            <input type="radio" class="form-check-input" id="checkbox7" name="radiobox" value="gelb" />
-                            <label class="form-check-label" for="Farbe7" style="margin-bottom: 4px; color:   #ffbf00">gelb</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customRadio7" name="radiobox" value="7" />
+                            <label class="custom-control-label" for="customRadio7" style="margin-bottom: 4px; color:   #ffbf00">gelb</label><br />
+							</div>
 							<!-- 8 -->
-                            <input type="radio" class="form-check-input" id="checkbox8" name="radiobox" value="gelb"/>
-                            <label class="form-check-label" for="Farbe8" style="margin-bottom: 4px; color: #9900cc">violett</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customRadio8" name="radiobox" value="8"/>
+                            <label class="custom-control-label" for="customRadio8" style="margin-bottom: 4px; color: #9900cc">violett</label><br />
+							</div>
 							<!-- 9 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox9" value="andere" />
-                            <label class="form-check-label" for="Farbe9" style="margin-bottom: 4px;">andere</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio9" value="9" />
+                            <label class="custom-control-label" for="customRadio9" style="margin-bottom: 4px;">andere</label><br />
+							</div>
                         </div>
                         <div class="center" style="">
                         <a href="index_13.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>

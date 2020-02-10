@@ -5,8 +5,8 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect(
                      'smu2020.ddns.net',
                      'phppage',
-					 'R2*jz24oNU@.y8',
-					 'umfrage'
+                     'R2*jz24oNU@.y8',
+                     'umfrage'
                    );
 
 $sql = "UPDATE fragen SET index2='$check1' WHERE id='$ip'";
@@ -83,14 +83,21 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <form method="post" action="index_4.php">
                         <div class="form-check" style="">         
                             <!-- 1 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="Sch&uuml;ler" />
-                            <label class="form-check-label" for="Beruf1" style="margin-bottom: 4px;">Sch&uuml;ler</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio1" value="1" />
+                            <label class="custom-control-label" for="customRadio1" style="">Schüler</label>
+							</div>
 							<!-- 2 -->
-                            <input type="radio" class="form-check-input" id="checkbox2" name="radiobox" value="Student" />
-                            <label class="form-check-label" for="Beruf2" style="margin-bottom: 4px;">Student</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio2" value="2" />
+                            <label class="custom-control-label" for="customRadio2" style="">Student</label>
+							</div>
 							<!-- 3 -->
-                            <input type="radio" class="form-check-input" id="checkbox3" name="radiobox" value="Anderes"/>
-                            <label class="form-check-label" for="Beruf3" style="margin-bottom: 4px;">Anderes</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio3" value="3" />
+                            <label class="custom-control-label" for="customRadio3" style="">Andere</label>
+							</div>
+
                         </div>
                         <div class="center" style="">
                         <a href="index_2.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>

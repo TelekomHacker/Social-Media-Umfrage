@@ -64,45 +64,25 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="progress-bar" role="progressbar" style="width: 22.21%" aria-valuenow="22.21" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
-                    <div class="h2" style="">denkst du, dass social media einen einfluss auf deine stimmung und mentale gesundheit hat?</div>
+                    <div class="h2" style="">Denkst du, dass social media einen einfluss auf deine stimmung und mentale gesundheit hat?</div>
                     <form method="post" action="index_28.php">
                         <div class="form-check" style="">         
 
-							<p>
-								<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Ja, da bin ich mir sicher</a>
-								<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Ich weiß nicht</button>
-								<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Nein, das kann aufkeinen Fall sein</button>
-							</p>
-							<div class="row">
-							  <div class="col">
-								<div class="collapse multi-collapse" id="multiCollapseExample1">
-								  <div class="card card-body"	href=".multi-collapse">
-									<label for="exampleFormControlTextarea1">Bitte begründe kurz ,warum du dir sicher bist(optional)</label>
-									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-								  </div>
-								</div>
-							  </div>
-							  <div class="col">
-								<div class="collapse multi-collapse" id="multiCollapseExample2">
-								  <div class="card card-body">
-									<label for="exampleFormControlTextarea1">Bitte begründe dies kurz (optional)</label>
-									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-								  </div>
-								</div>
-							  </div>
+							<!-- 1 -->
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio1" value="1" />
+                            <label class="custom-control-label" for="customRadio1" style="margin-bottom: 4px; ">Ja, da bin ich mir sicher</label><br />
 							</div>
-							<div class="col">
-								<div class="collapse multi-collapse" id="multiCollapseExample3">
-								  <div class="card card-body">
-									 <div class="form-group">
-										<label for="exampleFormControlTextarea1">Bitte begründe kurz, warum du denkst auf keinen Fall beeinflusst zu werden von Sozialen Medien (optional)</label>
-										<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
- 
-								  </div>
-								</div>
-							  </div>
+							<!-- 2 -->
+							<div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customRadio2" name="radiobox" value="2" />
+                            <label class="custom-control-label" for="customRadio2" style="margin-bottom: 4px; ">Ich weiß nicht</label><br />
 							</div>
-							
+							<!-- 3 -->
+							<div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customRadio3" name="radiobox" value="3"/>
+                            <label class="custom-control-label" for="customRadio3" style="margin-bottom: 4px; c">Nein, das kann aufkeinen Fall sein</label><br />
+							</div>
 							
 
                         </div>

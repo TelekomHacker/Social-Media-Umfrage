@@ -82,7 +82,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Was ist/war dein Lieblingsfach in der Schule?</div>
                     <form method="post" action="index_5.php">
                           <div class="form-group">
-	 
+						  
 								<input type="text" name="Lieblingsfach" class="form-control" id="t1" placeholder="Lieblingsfach bitte hier eingeben">
 							</div>
 							<br>

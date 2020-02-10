@@ -83,7 +83,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <form method="post" action="index_16.php">
                         <div class="form-check" style="">         
                             
-				
+							
                             </br>
 
 				<input name="range!" type="range" class="custom-range" min="0" max="10" step="0.2" id="customRange3">

@@ -90,23 +90,37 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<input name="checkbox6" value="0" type="hidden" />
                             
                             <!-- 1 -->
-                            <input type="checkbox" name="checkbox1" class="form-check-input" id="checkbox1" value="1" />
-                            <label class="form-check-label" for="SMApp1" style="margin-bottom: 4px;">Instagram</label><br />
+							<div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="checkbox1" class="custom-control-input" id="customCheck1" value="1" />
+                            <label class="custom-control-label" for="customCheck1" style="margin-bottom: 4px;">Instagram</label>
+							</div>
 							<!-- 2 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" value="1" />
-                            <label class="form-check-label" for="SMApp2" style="margin-bottom: 4px;">YouTube</label><br />
+							<div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2" name="checkbox2" value="1" />
+                            <label class="custom-control-label" for="customCheck2" style="margin-bottom: 4px;">YouTube</label>
+							</div>
 							<!-- 3 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox3" value="1"/>
-                            <label class="form-check-label" for="SMApp3" style="margin-bottom: 4px;">Twitter</label><br />
+							<div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3" name="checkbox3" value="1"/>
+                            <label class="custom-control-label" for="customCheck3" style="margin-bottom: 4px;">Twitter</label>
+							</div>
 							<!-- 4 -->
-                            <input type="checkbox" name="checkbox4" class="form-check-input" id="checkbox4" value="1" />
-                            <label class="form-check-label" for="SMApp4" style="margin-bottom: 4px;">Facebook</label><br />
+							<div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="checkbox4" class="custom-control-input" id="customCheck4" value="1" />
+                            <label class="custom-control-label" for="customCheck4" style="margin-bottom: 4px;">Facebook</label>
+							</div>
 							<!-- 5 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox5" name="checkbox5" value="1" />
-                            <label class="form-check-label" for="SMApp5" style="margin-bottom: 4px;">TikTok</label><br />
+							<div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5" name="checkbox5" value="1" />
+                            <label class="custom-control-label" for="customCheck5" style="margin-bottom: 4px;">TikTok</label>
+							</div>
 							<!-- 6 -->
-                            <input type="checkbox" class="form-check-input" id="checkbox6" name="checkbox6" value="1"/>
-                            <label class="form-check-label" for="SMApp6" style="margin-bottom: 4px;">Pinterest</label><br />
+							<div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6" name="checkbox6" value="1"/>
+                            <label class="custom-control-label" for="customCheck6" style="margin-bottom: 4px;">Pinterest</label>
+							</div>
+							
+							
                         </div>
                         <div class="center" style="">
                         <a href="index_4.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>

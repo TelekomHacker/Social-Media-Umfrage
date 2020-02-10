@@ -1,6 +1,4 @@
-<?php 
 
-?>
 
 <!DOCTYPE html>
 <html lang="de">
@@ -102,32 +100,51 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 				
                             
                             <!-- 1 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox1" value="0-12" />
-                            <label class="form-check-label" for="AltersGruppe1" style="">0 - 12</label><br />
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio1" value="1" />
+                            <label class="custom-control-label" for="customRadio1" style="">0 - 12</label>
+							</div>
 							<!-- 2 -->
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox2" value="13/14" />
-                            <label class="form-check-label" for="AltersGruppe2" style="">13/14</label>
-							<!-- 3 --></br>
-                            <input type="radio" name="radiobox" class="form-check-input" id="checkbox3" value="15/16" />
-                            <label class="form-check-label" for="AltersGruppe3" style="">15/16</label>
-							<!-- 4 --></br>
-							<input type="radio" name="radiobox" class="form-check-input" id="checkbox4" value="17/18" />
-                            <label class="form-check-label" for="AltersGruppe4" style="">17/18</label>
-							<!-- 5 --></br>
-							<input type="radio" name="radiobox" class="form-check-input" id="checkbox5" value="19-21" />
-                            <label class="form-check-label" for="AltersGruppe5" style="">19 - 21</label>
-							<!-- 6 --></br>
-							<input type="radio" name="radiobox" class="form-check-input" id="checkbox6" value="22-30" />
-                            <label class="form-check-label" for="AltersGruppe6" style="">22 - 30</label>
-							<!-- 7 --></br>
-							<input type="radio" name="radiobox" class="form-check-input" id="checkbox7" value="31-40" />
-                            <label class="form-check-label" for="AltersGruppe7" style="">31 - 40</label>
-							<!-- 8 --></br>
-							<input type="radio" name="radiobox" class="form-check-input" id="checkbox8" value="41-50" />
-                            <label class="form-check-label" for="AltersGruppe8" style="">41 - 50</label>
-							<!-- 9 --></br>
-							<input type="radio" name="radiobox" class="form-check-input" id="checkbox9" value="51+" />
-                            <label class="form-check-label" for="AltersGruppe9" style="">51+</label>
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio2" value="2" />
+                            <label class="custom-control-label" for="customRadio2" style="">13/14</label>
+							</div>
+							<!-- 3 -->
+							<div class="custom-control custom-radio">
+                            <input type="radio" name="radiobox" class="custom-control-input" id="customRadio3" value="3" />
+                            <label class="custom-control-label" for="customRadio3" style="">15/16</label>
+							</div>
+							<!-- 4 -->
+							<div class="custom-control custom-radio">
+							<input type="radio" name="radiobox" class="custom-control-input" id="customRadio4" value="4" />
+                            <label class="custom-control-label" for="customRadio4" style="">17/18</label>
+							</div>
+							<!-- 5 -->
+							<div class="custom-control custom-radio">
+							<input type="radio" name="radiobox" class="custom-control-input" id="customRadio5" value="5" />
+                            <label class="custom-control-label" for="customRadio5" style="">19 - 21</label>
+							</div>
+							<!-- 6 -->
+							<div class="custom-control custom-radio">
+							<input type="radio" name="radiobox" class="custom-control-input" id="customRadio6" value="6" />
+                            <label class="custom-control-label" for="customRadio6" style="">22 - 30</label>
+							</div>
+							<!-- 7 -->
+							<div class="custom-control custom-radio">
+							<input type="radio" name="radiobox" class="custom-control-input" id="customRadio7" value="7" />
+                            <label class="custom-control-label" for="customRadio7" style="">31 - 40</label>
+							</div>
+							<!-- 8 -->
+							<div class="custom-control custom-radio">
+							<input type="radio" name="radiobox" class="custom-control-input" id="customRadio8" value="8" />
+                            <label class="custom-control-label" for="customRadio8" style="">41 - 50</label>
+							</div>
+							<!-- 9 -->
+							<div class="custom-control custom-radio">
+							<input type="radio" name="radiobox" class="custom-control-input" id="customRadio9" value="9" />
+                            <label class="custom-control-label" for="customRadio9" style="">51+</label>
+							</div>
+							
                         </div>
                         <div class="center">
                         <button type="submit" class="btn btn-outline-primary" style="margin-left:0px;">Weiter</button>
