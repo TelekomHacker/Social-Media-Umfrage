@@ -80,7 +80,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                 </div>
                 <div class="frage">
                     <div class="h2" style="">Ich treffe oft Familie und Freunde um zu reden</div>
-                    <form method="post" action="index_14.php">
+                    <form method="post" action="index_20.php">
                         <div class="form-check" style="">         
                             
 				
@@ -97,7 +97,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 			    
                         </div>
                         <div class="center" style="">
-                        <a href="index_12.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
+                        <a href="index_18.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
                         <button type="submit" class="btn btn-outline-primary" >Weiter</button>
                         </div>
                     </form>
