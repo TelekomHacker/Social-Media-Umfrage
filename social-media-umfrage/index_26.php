@@ -81,7 +81,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                 </div>
                 <div class="frage">
                     <div class="h2" style="">Wie oft fühlst du dich alleine?</div>
-                    <form method="post" action="index_19.php">
+                    <form method="post" action="index_27.php">
                         <div class="form-check" style="">         
                             
 				
@@ -98,7 +98,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 			    
                         </div>
                         <div class="center" style="">
-                        <a href="index_17.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
+                        <a href="index_25.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
                         <button type="submit" class="btn btn-outline-primary" >Abgeben</button>
                         </div>
                     </form>
