@@ -1,10 +1,46 @@
 <?php
-$Instagram='"number"';
-$Youtube='"number"';
-$Twitter='"hidden"';
-$Facebook='"hidden"';
-$Tiktok='"hidden"';
-$Pinterest='"hidden"';
+$Whatsapp = $_POST['Whatsapp'];
+$Snapchat = $_POST['Snapchat'];
+$Telegram = $_POST['Telegram'];
+$Threema = $_POST['Threema'];
+$Fbmessenger = $_POST['Fbmessenger'];
+
+
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'localhost',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
+
+$sql = "INSERT INTO nutzungsdauer (n_ip, WhatsApp, Snapchat, Telegram, Threema, FB_Messenger) VALUES ('$ip', '$Whatsapp', '$Snapchat', '$Telegram', '$Threema', '$Fbmessenger')";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+$social = "SELECT * FROM socialmediaapps Where s_ip='$ip'";
+$erg = mysqli_query($link,$social) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+while ($row = mysqli_fetch_array($erg)) 
+{
+if($row['Instagram'] == '1')
+	$Instagram='"number"';
+	else $Instagram = '"hidden"';
+if($row['Youtube'] == '1')
+	$Youtube='"number"';
+	else $Youtube = '"hidden"';
+if($row['Twitter'] == '1')
+	$Twitter='"number"';
+	else $Twitter = '"hidden"';
+if($row['Facebook'] == '1')
+	$Facebook='"number"';
+	else $Facebook = '"hidden"';
+if($row['Tiktok'] == '1')
+	$Tiktok='"number"';
+	else $Tiktok = '"hidden"';
+if($row['Pinterest'] == '1')
+	$Pinterest='"number"';
+	else $Pinterest = '"hidden"';
+}  
 ?>
 
 <!DOCTYPE html>

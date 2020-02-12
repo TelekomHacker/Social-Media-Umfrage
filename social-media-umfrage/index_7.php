@@ -1,9 +1,43 @@
 <?php
+$check1 = $_POST['checkbox1'];
+$check2 = $_POST['checkbox2'];
+$check3 = $_POST['checkbox3'];
+$check4 = $_POST['checkbox4'];
+$check5 = $_POST['checkbox5'];
+
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'localhost',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
+
+$sql = "insert into messengerdienste(m_ip, Whatsapp, Snapchat, Telegram, Threema, Fbmessenger) values ('$ip', '$check1', '$check2','$check3', '$check4', '$check5')";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+$messenger = "SELECT * FROM messengerdienste Where m_ip='$ip'";
+$erg = mysqli_query($link,$messenger) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+while ($row = mysqli_fetch_array($erg)) 
+{
+if($row['Whatsapp'] == '1')
 	$Whatsapp='"number"';
-	$Snapchat='"hidden"';
+	else $Whatsapp = '"hidden"';
+if($row['Snapchat'] == '1')
+	$Snapchat='"number"';
+	else $Snapchat = '"hidden"';
+if($row['Telegram'] == '1')
 	$Telegram='"number"';
+	else $Telegram = '"hidden"';
+if($row['Threema'] == '1')
 	$Threema='"number"';
-	$Fbmessenger='"hidden"';
+	else $Threema = '"hidden"';
+if($row['Fbmessenger'] == '1')
+	$Fbmessenger='"number"';
+	else $Fbmessenger = '"hidden"';
+}  
+
 ?>
 
 <!DOCTYPE html>

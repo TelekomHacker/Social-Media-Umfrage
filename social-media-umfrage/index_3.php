@@ -1,5 +1,16 @@
 <?php
+$check1 = $_POST['radiobox'];
 
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect(
+                     'localhost',
+                     'root',
+                     '',
+                     'umfrage'
+                   );
+
+$sql = "UPDATE fragen SET index2='$check1' WHERE id='$ip'";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
 <!DOCTYPE html>
@@ -72,18 +83,18 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <form method="post" action="index_4.php">
                             <!-- 1 -->
                             <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="Schueler" />
+                            <input type="radio" id="customRadio1" name="radiobox" class="custom-control-input" value="Schueler" />
                             <label class="custom-control-label" for="customRadio1">Sch&uuml;ler</label><br />
                             </div>
 							<!-- 2 -->
 							<div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="Student" />
+                            <input type="radio" id="customRadio2" name="radiobox" class="custom-control-input" value="Student" />
                             <label class="custom-control-label" for="customRadio2">Student</label><br />
                             </div>
 							<!-- 3 -->
 							    
 							    <div class="custom-control custom-radio" style="margin: 0px auto;">
-                                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="sonstiges"/>
+                                    <input type="radio" id="customRadio3" name="radiobox" class="custom-control-input" value="sonstiges"/>
                                     <label class="custom-control-label" for="customRadio3">Sonstiges</label><br />                              
                                 </div>
                             

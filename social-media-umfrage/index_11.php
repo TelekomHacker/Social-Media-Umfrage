@@ -1,12 +1,19 @@
 <?php  
-error_reporting(0);//können wir am server rausnehmen den error von line 2 sieht man da nicht mehr
-if($status == '12'){
-    echo '<script language="javascript" type="text/javascript">var x = 12;</script>';
-}
+$status = $_GET['id'];
 if($status != '34' && $status != '12'){
-    //NORMALER PHP TEXT
-}
+$check1 = $_POST['radiobox'];
 
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'localhost',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
+
+$sql = "UPDATE fragen SET index10='$check1' WHERE id='$ip'";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+}
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -16,14 +23,6 @@ if($status != '34' && $status != '12'){
 		<title>Social Media Umfrage</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 		<link rel="stylesheet" href="style.css" />
-		
-		<script language="javascript" type="text/javascript">
-		function dokumentGeladen(event) {
-		    if (var x == 12){
-                $('#jacolla').collapse('show');
-            }
-        }
-        </script>
 	</head>
 	
 	<body>

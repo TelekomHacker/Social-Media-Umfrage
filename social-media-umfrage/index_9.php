@@ -1,5 +1,21 @@
 <?php
+$Instagram = $_POST['Instagram'];
+$Youtube = $_POST['Youtube'];
+$Twitter = $_POST['Twitter'];
+$Facebook = $_POST['Facebook'];
+$Tiktok = $_POST['Tiktok'];
+$Pinterest = $_POST['Pinterest'];
 
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'localhost',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
+
+$sql = "UPDATE nutzungsdauer SET Instagram='$Instagram', YouTube='$Youtube', Twitter='$Twitter', Facebook='$Facebook', TikTok='$Tiktok', Pinterest='$Pinterest' WHERE n_ip = '$ip'";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
 <!DOCTYPE html>
@@ -76,6 +92,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<input name="checkbox3" value="0" type="hidden" />
 							<input name="checkbox4" value="0" type="hidden" />
 							<input name="checkbox5" value="0" type="hidden" />
+							<input name="checkbox6" value="0" type="hidden" />
                             
                             <!-- 1 -->
 							<div class="custom-control custom-checkbox">
@@ -101,6 +118,11 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<div class="custom-control custom-checkbox">
 								<input type="checkbox" class="custom-control-input" id="customCheck5" name="checkbox5" value="1" />
 								<label class="custom-control-label" for="customCheck5" style="">Lifestyle bloggern folgen</label><br />
+							</div>
+							<!-- 6 -->
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" name="checkbox6" class="custom-control-input" id="customCheck6" value="1" />
+								<label class="custom-control-label" for="customCheck6" style="">Freunden folgen</label><br />
 							</div>
 							
                         </div>

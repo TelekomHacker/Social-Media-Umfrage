@@ -1,5 +1,23 @@
 <?php
+$check1 = $_POST['checkbox1'];
+$check2 = $_POST['checkbox2'];
+$check3 = $_POST['checkbox3'];
+$check4 = $_POST['checkbox4'];
+$check5 = $_POST['checkbox5'];
+$check6 = $_POST['checkbox6'];
 
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'localhost',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
+				   
+		
+
+$sql = "insert into socialmediaapps(s_ip, Instagram, Youtube, Twitter, Facebook, Tiktok, Pinterest) values ('$ip', '$check1', '$check2','$check3', '$check4', '$check5', '$check6')";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
 <!DOCTYPE html>
@@ -100,7 +118,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<!-- 5 -->
 							<div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck5" name="checkbox5" value="1" />
-                            <label class="custom-control-label" for="customCheck5" style="">FB customCheck</label><br />
+                            <label class="custom-control-label" for="customCheck5" style="">FB Messenger</label><br />
                             </div>
                         </div>
                         <div class="center" style="">

@@ -1,4 +1,19 @@
 <?php
+$check1 = $_POST['radiobox'];
+
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'localhost',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
+				   
+if($check1){
+$sql = "insert into fragen(id, index1) values ('$ip', '$check1')";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));	
+}
+
 
 ?>
 

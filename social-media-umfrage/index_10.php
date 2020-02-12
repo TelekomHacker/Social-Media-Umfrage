@@ -1,5 +1,4 @@
 <?php 
-error_reporting(0); 
 $status = $_GET['id'];
 if($status == '34'){ //NEIN
 	header('location: index_11.php?id=34');
@@ -8,7 +7,23 @@ if($status == '12'){ //JA
 	header('location: index_11.php?id=12');
 }
 if($status != '34' && $status != '12'){
-    //NORMALES PHP PROGRAMMIERUNG
+$check1 = $_POST['checkbox1'];
+$check2 = $_POST['checkbox2'];
+$check3 = $_POST['checkbox3'];
+$check4 = $_POST['checkbox4'];
+$check5 = $_POST['checkbox5'];
+$check6 = $_POST['checkbox6'];
+
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'localhost',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
+
+$sql = "insert into nutzungsgruende(nt_ip, Memes, Beruflich, Prominente, Hochladen, Lifestyles, Freunde) values ('$ip', '$check1', '$check2','$check3', '$check4', '$check5', '$check6')";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 }
 ?>
 

@@ -1,5 +1,16 @@
 <?php
+$check1 = $_POST['radiobox'];
 
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'localhost',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
+
+$sql = "UPDATE fragen SET index14='$check1' WHERE id='$ip'";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
 <!DOCTYPE html>

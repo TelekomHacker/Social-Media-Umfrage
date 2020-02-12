@@ -1,5 +1,16 @@
 <?php
+$check1 = $_POST['range!'];
 
+$ip = $_SERVER['REMOTE_ADDR'];
+$link = mysqli_connect (
+                     'localhost',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
+
+$sql = "UPDATE fragen SET index26='$check1' WHERE id='$ip'";
+$result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -10,7 +21,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	
+
 	<body>
 
 <!-- Modal 3!!2 -->
@@ -59,7 +70,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
     </div>
   </div>
 </div>
-	
+
 	   <div class="wrapper">
 	       <div class="header">
 	            <div class="h1" style="">Social Media Umfrage 2020</div>
@@ -69,7 +80,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                 <div class="frage">
                     <div class="h2" style="">Denkst du, dass social media einen einfluss auf deine stimmung und mentale gesundheit hat?</div>
                     <form method="post" action="index_28.php">
-                        <div class="form-check" style="">         
+                        <div class="form-check" style="">
 
 							<!-- 1 -->
 							<div class="custom-control custom-radio">
@@ -86,7 +97,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                             <input type="radio" class="custom-control-input" id="customRadio3" name="radiobox" value="3"/>
                             <label class="custom-control-label" for="customRadio3" style="">Nein, das kann aufkeinen Fall sein</label><br />
 							</div>
-							
+
 
                         </div>
                         <div class="center" style="">
@@ -100,7 +111,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                 </div>
            </div>
        </div>
-       
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -112,5 +123,5 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 </div>
 
     </body>
-    
+
 </html>
