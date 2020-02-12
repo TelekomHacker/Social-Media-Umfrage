@@ -17,14 +17,14 @@ $id1 = "SELECT F_ID FROM fragen Where id='$ip'";
 $result1 = mysqli_query($link,$id1) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 while ($row = mysqli_fetch_assoc($result1)) 
 {
-	$s1=$row['F_ID'];
+	$s1 = $row['F_ID'];
 }  
 $id2 = "SELECT M_ID FROM messengerdienste Where m_ip='$ip'";
 
 $result2 = mysqli_query($link,$id2) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 while ($row2 = mysqli_fetch_assoc($result2)) 
 {
-	$s2=$row2['M_ID'];
+	$s2 = $row2['M_ID'];
 }  
 
 $id3 = "SELECT ND_ID FROM nutzungsdauer Where n_ip='$ip'";
@@ -47,23 +47,24 @@ while ($row5 = mysqli_fetch_assoc($result5))
 {
 	$s5=$row5['S_ID'];
 }  
-$update1 = "UPDATE fragen SET id='$s1' WHERE id='$ip'";
-$update11 = mysqli_query($link,$update1) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
-$update2 = "UPDATE messengerdienste SET M_ID='$s2' WHERE m_ip='$ip'";
+$update2 = "UPDATE messengerdienste SET m_ip='0' WHERE m_ip='$ip'";
 $update22 = mysqli_query($link,$update2) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
-$update3 = "UPDATE nutzungsdauer SET ND_ID='$s3' WHERE n_ip='$ip'";
+$update3 = "UPDATE nutzungsdauer SET n_ip='0' WHERE n_ip='$ip'";
 $update33 = mysqli_query($link,$update3) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
-$update4 = "UPDATE nutzungsgruende SET NG_ID='$s4' WHERE nt_ip='$ip'";
+$update4 = "UPDATE nutzungsgruende SET nt_ip='0' WHERE nt_ip='$ip'";
 $update44 = mysqli_query($link,$update4) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
-$update5 = "UPDATE socialmediaapps SET S_ID='$s5' WHERE s_ip='$ip'";
+$update5 = "UPDATE socialmediaapps SET s_ip='0' WHERE s_ip='$ip'";
 $update55 = mysqli_query($link,$update5) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
-$ende = "UPDATE fragen set index5='$s2', index6='$s5', index7='$s3', index8='$s3', index9='$s4' WHERE id='$s1'";
+$ende = "UPDATE fragen set index5='$s2', index6='0', index7='$s3', index8='$s3', index9='$s4' WHERE id='$ip'";
 $einfuegen = mysqli_query($link,$ende) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+$update1 = "UPDATE fragen SET id='0' WHERE id='$ip'";
+$update11 = mysqli_query($link,$update1) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
 <!DOCTYPE html>

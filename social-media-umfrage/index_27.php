@@ -78,7 +78,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="progress-bar" role="progressbar" style="width: 92.857%" aria-valuenow="92.857" aria-valuemin="92.857" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
-                    <div class="h2" style="">Denkst du, dass social media einen einfluss auf deine stimmung und mentale gesundheit hat?</div>
+                    <div class="h2" style="">Denkst du, dass Social Media einen Einfluss auf deine Stimmung und mentale Gesundheit hat?</div>
                     <form method="post" action="index_28.php">
                         <div class="form-check" style="">
 

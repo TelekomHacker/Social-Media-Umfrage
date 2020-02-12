@@ -86,7 +86,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                             <!-- 1 -->
 							<div class="custom-control custom-radio">
 								<input type="radio" name="radiobox" class="custom-control-input" id="customRadio1" value="1" />
-								<label class="custom-control-label" for="customRadio1" style="">Ja absolut</label><br />
+								<label class="custom-control-label" for="customRadio1" style="">Ja, absolut</label><br />
 							</div>
 							<!-- 2 -->
                             <div class="custom-control custom-radio">

@@ -79,7 +79,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="progress-bar" role="progressbar" style="width: 42.857%" aria-valuenow="42.857" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
-                    <div class="h2" style="">Konntest du schonmal feststellen, dass du schlechter gelaunt warst, nachdem du mal viel zeit auf social media verbracht hast?</div>
+                    <div class="h2" style="">Konntest du schonmal feststellen, dass du schlechter gelaunt warst, nachdem du mal viel zeit auf Social Media verbracht hast?</div>
                     <form method="post" action="index_14.php">
                         <div class="form-check" style="">         
                             <!-- 1 -->
