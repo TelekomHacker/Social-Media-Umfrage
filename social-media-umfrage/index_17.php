@@ -82,7 +82,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Ich werde nicht oft eingeladen etwas mit anderen zu unternehmen</div>
                     <form method="post" action="index_18.php">
                         <div class="form-check" style="">         
-                         <input type="hidden" name="id" value= "<?=$ip ?>">   
+                         <input type="hidden" name="id" value="<?=$ip ?>">   
 				
                             <br />
 

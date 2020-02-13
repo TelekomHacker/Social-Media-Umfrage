@@ -82,7 +82,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Ich treffe oft Familie und Freunde um zu reden</div>
                     <form method="post" action="index_20.php">
                         <div class="form-check" style="">         
-                         <input type="hidden" name="id" value= "<?=$ip ?>">   
+                         <input type="hidden" name="id" value="<?=$ip ?>">   
 				
                             <br />
 

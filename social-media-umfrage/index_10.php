@@ -1,5 +1,7 @@
 <?php 
 $status = $_GET['id'];
+$ip = $_POST['ident'];
+echo $ip;
 if($status == '34'){ //NEIN
 	header('location: index_11.php?id=34');
 }
@@ -14,7 +16,7 @@ $check4 = $_POST['checkbox4'];
 $check5 = $_POST['checkbox5'];
 $check6 = $_POST['checkbox6'];
 
-$ip = $_POST['id'];
+
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -96,7 +98,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Fühlst du den "Drang" ein neues Bild hochzuladen, wenn du das länger schon nicht mehr getan hast?</div>
                     <form method="post" action="index_11.php">
                         <div class="form-check" style="">
-							<input type="hidden" name="id" value= "<?=$ip ?>">
+							<input type="hidden" name="ident" value= "<?=$ip ?>">
 
                             <!-- 1 -->
 							<div class="custom-control custom-radio">

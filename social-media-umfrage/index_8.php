@@ -4,9 +4,10 @@ $Snapchat = $_POST['Snapchat'];
 $Telegram = $_POST['Telegram'];
 $Threema = $_POST['Threema'];
 $Fbmessenger = $_POST['Fbmessenger'];
+$Sonstiges = $_POST['Sonstiges'];
 
 $ip = $_POST['id'];
-
+echo $ip;
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -14,7 +15,7 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "INSERT INTO nutzungsdauer (n_ip, WhatsApp, Snapchat, Telegram, Threema, FB_Messenger) VALUES ('$ip', '$Whatsapp', '$Snapchat', '$Telegram', '$Threema', '$Fbmessenger')";
+$sql = "INSERT INTO nutzungsdauer (n_ip, WhatsApp, Snapchat, Telegram, Threema, FB_Messenger, M_Sonstiges) VALUES ('$ip', '$Whatsapp', '$Snapchat', '$Telegram', '$Threema', '$Fbmessenger', '$Sonstiges')";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
 $social = "SELECT * FROM socialmediaapps Where s_ip='$ip'";
@@ -40,6 +41,9 @@ if($row['Tiktok'] == '1')
 if($row['Pinterest'] == '1')
 	$Pinterest='"number"';
 	else $Pinterest = '"hidden"';
+if($row['S_Sonstiges'] == '1')
+	$sonst='"number"';
+	else $sonst = '"hidden"';
 }  
 ?>
 
@@ -118,7 +122,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<input name="Facebook" value="0" type="hidden" />
 							<input name="Tiktok" value="0" type="hidden" />
 							<input name="Pinterest" value="0" type="hidden" />
-							<input type="hidden" name="id" value= "<?=$ip ?>">
+							<input type="hidden" name="id" value="<?=$ip ?>">
 
 <?php  
 if ($Instagram == '"number"') {
@@ -138,6 +142,9 @@ if ($Tiktok == '"number"') {
 }
 if ($Pinterest == '"number"') {
     echo '<input type="<?= $Pinterest ?>" name="Pinterest" class="form-control" id="t1" placeholder="Pinterest" />';
+}
+if ($sonst == '"number"') {
+    echo '<input type="<?= $sonst ?>" name="Sonstiges" class="form-control" id="t1" placeholder="Sonstiges" />';
 }
 ?>
 					

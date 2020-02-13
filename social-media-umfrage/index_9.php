@@ -5,9 +5,10 @@ $Twitter = $_POST['Twitter'];
 $Facebook = $_POST['Facebook'];
 $Tiktok = $_POST['Tiktok'];
 $Pinterest = $_POST['Pinterest'];
+$Sonstiges = $_POST['Sonstiges'];
 
 $ip = $_POST['id'];
-
+echo $ip;
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -15,7 +16,7 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "UPDATE nutzungsdauer SET Instagram='$Instagram', YouTube='$Youtube', Twitter='$Twitter', Facebook='$Facebook', TikTok='$Tiktok', Pinterest='$Pinterest' WHERE n_ip = '$ip'";
+$sql = "UPDATE nutzungsdauer SET Instagram='$Instagram', YouTube='$Youtube', Twitter='$Twitter', Facebook='$Facebook', TikTok='$Tiktok', Pinterest='$Pinterest', S_Sonstiges='$Sonstiges' WHERE n_ip = '$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
@@ -94,7 +95,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<input name="checkbox4" value="0" type="hidden" />
 							<input name="checkbox5" value="0" type="hidden" />
 							<input name="checkbox6" value="0" type="hidden" />
-							<input type="hidden" name="id" value= "<?=$ip ?>">
+							<input type="hidden" name="ident" value="<?=$ip ?>">
                             
                             <!-- 1 -->
 							<div class="custom-control custom-checkbox">

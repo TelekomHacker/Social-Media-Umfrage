@@ -1,7 +1,7 @@
 <?php
 $check1 = $_POST['radiobox'];
-
 $ip = $_POST['id'];
+echo $ip;
 $link = mysqli_connect (
                      'localhost',
                      'root',

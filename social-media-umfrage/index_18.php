@@ -82,7 +82,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Die Leute die ich kenne haben keinen Spaß an den Dingen die ich selbst gerne mache</div>
                     <form method="post" action="index_19.php">
                         <div class="form-check" style="">         
-                         <input type="hidden" name="id" value= "<?=$ip ?>">   
+                         <input type="hidden" name="id" value="<?=$ip ?>">   
 				
                             <br />
 

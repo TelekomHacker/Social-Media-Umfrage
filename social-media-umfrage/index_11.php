@@ -1,9 +1,11 @@
 <?php  
 $status = $_GET['id'];
+$ip = $_POST['ident'];
+echo $ip;
 if($status != '34' && $status != '12'){
 $check1 = $_POST['radiobox'];
 
-$ip = $_POST['id'];
+
 $link = mysqli_connect (
                      'localhost',
                      'root',

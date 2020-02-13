@@ -81,7 +81,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Denkst du, dass Social Media einen Einfluss auf deine Stimmung und mentale Gesundheit hat?</div>
                     <form method="post" action="index_28.php">
                         <div class="form-check" style="">
-
+							<input type="hidden" name="id" value= "<?=$ip ?>">
 							<!-- 1 -->
 							<div class="custom-control custom-radio">
                             <input type="radio" name="radiobox" class="custom-control-input" id="customRadio1" value="1" />
@@ -97,7 +97,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                             <input type="radio" class="custom-control-input" id="customRadio3" name="radiobox" value="3"/>
                             <label class="custom-control-label" for="customRadio3" style="">Nein, das kann aufkeinen Fall sein</label><br />
 							</div>
-							<input type="hidden" name="id" value= "<?=$ip ?>">
+							
 
                         </div>
                         <div class="center" style="">

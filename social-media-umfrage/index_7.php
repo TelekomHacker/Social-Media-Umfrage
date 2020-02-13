@@ -4,6 +4,7 @@ $check2 = $_POST['checkbox2'];
 $check3 = $_POST['checkbox3'];
 $check4 = $_POST['checkbox4'];
 $check5 = $_POST['checkbox5'];
+$check6 = $_POST['checkbox6'];
 
 $ip = $_POST['id'];
 $link = mysqli_connect (
@@ -13,7 +14,7 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "insert into messengerdienste(m_ip, Whatsapp, Snapchat, Telegram, Threema, Fbmessenger) values ('$ip', '$check1', '$check2','$check3', '$check4', '$check5')";
+$sql = "insert into messengerdienste(m_ip, Whatsapp, Snapchat, Telegram, Threema, Fbmessenger, M_Sonstiges) values ('$ip', '$check1', '$check2','$check3', '$check4', '$check5', '$check6')";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
 $messenger = "SELECT * FROM messengerdienste Where m_ip='$ip'";
@@ -36,6 +37,9 @@ if($row['Threema'] == '1')
 if($row['Fbmessenger'] == '1')
 	$Fbmessenger='"number"';
 	else $Fbmessenger = '"hidden"';
+if($row['M_Sonstiges'] == '1')
+	$Sonstiges='"number"';
+	else $Sonstiges = '"hidden"';
 }  
 
 ?>
@@ -131,6 +135,9 @@ if ($Threema == '"number"') {
 }
 if ($Fbmessenger == '"number"') {
     echo '<input type="<?= $Fbmessenger ?>" name="Fbmessenger" class="form-control" id="t1" placeholder="Facebook Messenger" />';
+}
+if ($Sonstiges == '"number"') {
+    echo '<input type="<?= $Sonstiges ?>" name="Sonstiges" class="form-control" id="t1" placeholder="Sonstiges" />';
 }
 ?>
 

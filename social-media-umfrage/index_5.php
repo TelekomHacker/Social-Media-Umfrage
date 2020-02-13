@@ -88,6 +88,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<input name="checkbox4" value="0" type="hidden" />
 							<input name="checkbox5" value="0" type="hidden" />
 							<input name="checkbox6" value="0" type="hidden" />
+							<input name="checkbox7" value="0" type="hidden" />
 							<input type="hidden" name="id" value= "<?=$ip ?>">
                             
                             <!-- 1 -->
@@ -119,6 +120,11 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck6" name="checkbox6" value="1"/>
                             <label class="custom-control-label" for="customCheck6" style="">Pinterest</label><br />
+                            </div>
+							<!-- 7 -->
+							<div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck7" name="checkbox7" value="1"/>
+                            <label class="custom-control-label" for="customCheck7" style="">Sonstiges</label><br />
                             </div>
                         </div>
                         <div class="center" style="">
