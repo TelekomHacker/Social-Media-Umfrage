@@ -1,7 +1,7 @@
 <?php
 $check1 = $_POST['radiobox'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_POST['id'];
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -9,7 +9,7 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "UPDATE fragen SET index3='$check1' WHERE id='$ip'";
+$sql = "UPDATE fragen SET index3='$check1' WHERE F_ID='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
@@ -81,6 +81,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                 <div class="frage">
                     <div class="h2" style="">Was ist/war dein Lieblingsfach in der Schule?</div>
                     <form method="post" action="index_5.php">
+					<input type="hidden" name="id" value= "<?=$ip ?>">
                         <div class="form-group">
 							<input type="text" name="Lieblingsfach" class="form-control" id="t1" placeholder="Lieblingsfach" style="margin:0px;" />
 						</div>

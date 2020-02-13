@@ -1,7 +1,7 @@
 <?php
 $check1 = $_POST['Lieblingsfach'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_POST['id'];
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -9,7 +9,7 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "UPDATE fragen SET index4='$check1' WHERE id='$ip'";
+$sql = "UPDATE fragen SET index4='$check1' WHERE F_ID='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
@@ -88,6 +88,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<input name="checkbox4" value="0" type="hidden" />
 							<input name="checkbox5" value="0" type="hidden" />
 							<input name="checkbox6" value="0" type="hidden" />
+							<input type="hidden" name="id" value= "<?=$ip ?>">
                             
                             <!-- 1 -->
                             <div class="custom-control custom-checkbox">

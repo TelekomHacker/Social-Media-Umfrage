@@ -1,7 +1,7 @@
 <?php
 $check1 = $_POST['radiobox'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_POST['id'];
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -9,7 +9,7 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "UPDATE fragen SET index11='$check1' WHERE id='$ip'";
+$sql = "UPDATE fragen SET index11='$check1' WHERE F_ID='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 <!DOCTYPE html>
@@ -81,7 +81,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Fühlst du dich als würdest du etwas verpassen, wenn du für ein paar Tage nicht auf Social Media bist?</div>
                     <form method="post" action="index_13.php">
                         <div class="form-check" style="">         
-
+						<input type="hidden" name="id" value= "<?=$ip ?>">
 				
                             <!-- 1 -->
 							<div class="custom-control custom-radio">

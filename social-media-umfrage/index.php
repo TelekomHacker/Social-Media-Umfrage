@@ -9,4 +9,5 @@ if ( $detect->isMobile() ) {
     header('location: index_1.php');
 }
 
+
 ?>

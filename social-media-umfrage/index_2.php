@@ -1,7 +1,7 @@
 <?php
 $check1 = $_POST['radiobox'];
+$ip = $_POST['id'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -9,12 +9,21 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 				   
+$prim = "SELECT F_ID from fragen Where id='$ip'";	   
+$erg = mysqli_query($link,$prim) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
+while($row = mysqli_fetch_assoc($erg)) 
+{
+	$fid = $row['F_ID'];
+}  
+
+$loeschen = "UPDATE fragen set id='0' Where F_ID = '$fid'";	
+$delete = mysqli_query($link,$loeschen) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+
 if($check1){
-$sql = "insert into fragen(id, index1) values ('$ip', '$check1')";
+$sql = "UPDATE fragen set index1='$check1' Where F_ID = '$fid'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));	
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -90,6 +99,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                             <input name="checkbox2" value="no" type="hidden" />
                             <input name="checkbox3" value="no" type="hidden" />
                             <input name="checkbox4" value="no" type="hidden" />
+							<input type="hidden" name="id" value= "<?=$fid ?>">
 				
                             <!-- 1 -->
                             <div class="custom-control custom-radio">

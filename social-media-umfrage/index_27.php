@@ -1,7 +1,7 @@
 <?php
 $check1 = $_POST['range!'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_POST['id'];
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -9,7 +9,7 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "UPDATE fragen SET index26='$check1' WHERE id='$ip'";
+$sql = "UPDATE fragen SET index26='$check1' WHERE F_ID='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 <!DOCTYPE html>
@@ -97,7 +97,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                             <input type="radio" class="custom-control-input" id="customRadio3" name="radiobox" value="3"/>
                             <label class="custom-control-label" for="customRadio3" style="">Nein, das kann aufkeinen Fall sein</label><br />
 							</div>
-
+							<input type="hidden" name="id" value= "<?=$ip ?>">
 
                         </div>
                         <div class="center" style="">

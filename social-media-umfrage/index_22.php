@@ -1,7 +1,7 @@
 <?php
 $check1 = $_POST['range!'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_POST['id'];
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -9,7 +9,7 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "UPDATE fragen SET index21='$check1' WHERE id='$ip'";
+$sql = "UPDATE fragen SET index21='$check1' WHERE F_ID='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
@@ -82,7 +82,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Mein Umfeld hat wenig Vertrauen in meine Versprechen</div>
                     <form method="post" action="index_23.php">
                         <div class="form-check" style="">         
-                            
+                            <input type="hidden" name="id" value= "<?=$ip ?>">
                            
 				
                             <br />

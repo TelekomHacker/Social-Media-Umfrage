@@ -1,5 +1,13 @@
 <?php 
-
+$link = mysqli_connect (
+                     'localhost',
+                     'root',
+					 '',
+					 'umfrage'
+                   );
+$zufall = rand(10000000,99999999 );
+$einfuegen ="Insert Into fragen (id) values ('$zufall')";
+$result = mysqli_query($link,$einfuegen) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));	
 ?>
 
 <!DOCTYPE html>
@@ -98,7 +106,8 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="h2" style="">Wie alt bist du?</div>
                     <form method="post" action="index_2.php">
                         <div class="form-check" style="">         
-                            <input name="radiobox" value="no" type="hidden" /> 	<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
+                            <input name="radiobox" value="no" type="hidden" /> 							<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
+							<input type="hidden" name="id" value= "<?=$zufall?>" >
 				
                             <!-- 1 -->
                             <div class="custom-control custom-radio">

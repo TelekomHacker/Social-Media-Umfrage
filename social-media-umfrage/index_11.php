@@ -3,7 +3,7 @@ $status = $_GET['id'];
 if($status != '34' && $status != '12'){
 $check1 = $_POST['radiobox'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_POST['id'];
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -11,7 +11,7 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "UPDATE fragen SET index10='$check1' WHERE id='$ip'";
+$sql = "UPDATE fragen SET index10='$check1' WHERE F_ID='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 }
 ?>
@@ -105,7 +105,7 @@ if($status != '34' && $status != '12'){ //NICHTS gepresst
     echo '<a href="index_10.php?id=34"><button type="button" class="btn btn-primary">Nein</button></a>';
 }
 ?>                                                            
-
+							<input type="hidden" name="id" value= "<?=$ip ?>">
 						      <div class="collapse<?php if($show == "true"){echo "show";} ?>" id="jacolla">
 									<div class="card card-body">
 									

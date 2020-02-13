@@ -1,7 +1,7 @@
 <?php 
 $check1 = $_POST['radiobox'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_POST['id'];
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -9,7 +9,7 @@ $link = mysqli_connect (
 					 'umfrage'
                    );
 
-$sql = "UPDATE fragen SET index13='$check1' WHERE id='$ip'";
+$sql = "UPDATE fragen SET index13='$check1' WHERE F_ID='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 ?>
 
@@ -83,7 +83,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <form method="post" action="index_15.php">
                         <div class="form-check" style="">         
                             <input name="radiobox" value="no" type="hidden" /> 	<!--Wird genutzt damit die customRadioen auch "null" sein können -->
-
+							<input type="hidden" name="id" value= "<?=$ip ?>">
                             
 
                             <!-- 1 -->

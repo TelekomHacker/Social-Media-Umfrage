@@ -6,7 +6,7 @@ $check4 = $_POST['checkbox4'];
 $check5 = $_POST['checkbox5'];
 $check6 = $_POST['checkbox6'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_POST['id'];
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -94,6 +94,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<input name="checkbox3" value="0" type="hidden" />
 							<input name="checkbox4" value="0" type="hidden" />
 							<input name="checkbox5" value="0" type="hidden" />
+							<input type="hidden" name="id" value= "<?=$ip ?>">
 
                             <!-- 1 -->
                             <div class="custom-control custom-checkbox">

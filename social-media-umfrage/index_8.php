@@ -5,8 +5,8 @@ $Telegram = $_POST['Telegram'];
 $Threema = $_POST['Threema'];
 $Fbmessenger = $_POST['Fbmessenger'];
 
+$ip = $_POST['id'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -118,6 +118,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<input name="Facebook" value="0" type="hidden" />
 							<input name="Tiktok" value="0" type="hidden" />
 							<input name="Pinterest" value="0" type="hidden" />
+							<input type="hidden" name="id" value= "<?=$ip ?>">
 
 <?php  
 if ($Instagram == '"number"') {

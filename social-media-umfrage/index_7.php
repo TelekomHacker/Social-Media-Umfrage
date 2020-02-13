@@ -5,7 +5,7 @@ $check3 = $_POST['checkbox3'];
 $check4 = $_POST['checkbox4'];
 $check5 = $_POST['checkbox5'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_POST['id'];
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -114,6 +114,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                             <input name="Telegram" value="0" type="hidden" />
 							<input name="Threema" value="0" type="hidden" />
 							<input name="Fbmessenger" value="0" type="hidden" />
+							<input type="hidden" name="id" value= "<?=$ip ?>">
 
 <?php
 if ($Whatsapp == '"number"') {

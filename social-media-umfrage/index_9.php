@@ -6,7 +6,8 @@ $Facebook = $_POST['Facebook'];
 $Tiktok = $_POST['Tiktok'];
 $Pinterest = $_POST['Pinterest'];
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_POST['id'];
+
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -93,6 +94,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<input name="checkbox4" value="0" type="hidden" />
 							<input name="checkbox5" value="0" type="hidden" />
 							<input name="checkbox6" value="0" type="hidden" />
+							<input type="hidden" name="id" value= "<?=$ip ?>">
                             
                             <!-- 1 -->
 							<div class="custom-control custom-checkbox">
