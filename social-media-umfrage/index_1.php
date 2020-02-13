@@ -30,7 +30,7 @@
       </div>
       <div class="modal-body">
         Hi!<br />
-        Wir bitten euch alle Fragen, so reflektiert wie m&ouml;glich, zu beantworten - nehmt euch bitte Zeit! Pro Frage k&ouml;nnt ihr mehrere Antworten ankreuzen. Es werden KEINE personenbezogene Daten gespeichert. Wir garantiern, dass die Umfrage 100% anonym ist!<br /><br />
+        Wir bitten euch alle Fragen, so reflektiert wie m&ouml;glich, zu beantworten - nehmt euch bitte Zeit! Pro Frage k&ouml;nnt ihr mehrere Antworten ankreuzen. Es werden KEINE personenbezogene Daten gespeichert. Wir garantieren, dass die Umfrage 100% anonym ist!<br /><br />
         Wir w&uuml;nschen euch viel Spa&szlig; bei der Umfrage!<br /><br /><br />
         <div class="disclink" style=""><a data-toggle="modal" href="#modal32">Disclaimer<img src="img/info.svg" alt="moin" class="info" /></a></div>
       </div>
