@@ -60,7 +60,7 @@ $update44 = mysqli_query($link,$update4) or die("Anfrage fehlgeschlagen: " . mys
 $update5 = "UPDATE socialmediaapps SET s_ip='0' WHERE s_ip='$ip'";
 $update55 = mysqli_query($link,$update5) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
-$ende = "UPDATE fragen set index5='$s2', index6='0', index7='$s3', index8='$s3', index9='$s4' WHERE id='$ip'";
+$ende = "UPDATE fragen set index5='$s2', index6='$s5', index7='$s3', index8='$s3', index9='$s4' WHERE id='$ip'";
 $einfuegen = mysqli_query($link,$ende) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
 $update1 = "UPDATE fragen SET id='0' WHERE id='$ip'";
