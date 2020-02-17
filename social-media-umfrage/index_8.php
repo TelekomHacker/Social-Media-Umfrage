@@ -7,7 +7,7 @@ $Fbmessenger = $_POST['Fbmessenger'];
 $Sonstiges = $_POST['Sonstiges'];
 
 $ip = $_POST['id'];
-echo $ip;
+
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -123,6 +123,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 							<input name="Tiktok" value="0" type="hidden" />
 							<input name="Pinterest" value="0" type="hidden" />
 							<input type="hidden" name="id" value="<?=$ip ?>">
+								<input name="Sonstiges" value="0" type="hidden" />
 
 <?php  
 if ($Instagram == '"number"') {

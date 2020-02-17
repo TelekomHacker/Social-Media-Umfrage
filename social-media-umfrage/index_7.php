@@ -118,6 +118,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                             <input name="Telegram" value="0" type="hidden" />
 							<input name="Threema" value="0" type="hidden" />
 							<input name="Fbmessenger" value="0" type="hidden" />
+							<input name="Sonstiges" value="0" type="hidden" />
 							<input type="hidden" name="id" value= "<?=$ip ?>">
 
 <?php

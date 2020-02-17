@@ -8,7 +8,7 @@ $Pinterest = $_POST['Pinterest'];
 $Sonstiges = $_POST['Sonstiges'];
 
 $ip = $_POST['id'];
-echo $ip;
+
 $link = mysqli_connect (
                      'localhost',
                      'root',
