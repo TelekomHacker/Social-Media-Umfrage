@@ -1,12 +1,13 @@
 <?php 
 $status = $_GET['id'];
 $ip = $_POST['ident'];
-echo $ip;
 if($status == '34'){ //NEIN
-	header('location: index_11.php?id=34');
+    $ip= $_GET['ip'];
+	header('location: index_11.php?id=34&ip='.$ip);
 }
 if($status == '12'){ //JA
-	header('location: index_11.php?id=12');
+    $ip= $_GET['ip'];
+	header('location: index_11.php?id=12&ip='.$ip);
 }
 if($status != '34' && $status != '12'){
 $check1 = $_POST['checkbox1'];

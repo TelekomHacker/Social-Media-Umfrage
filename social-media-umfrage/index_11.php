@@ -1,8 +1,8 @@
 <?php  
 $status = $_GET['id'];
-$ip = $_POST['ident'];
-echo $ip;
 if($status != '34' && $status != '12'){
+$ip = $_POST['ident'];
+
 $check1 = $_POST['radiobox'];
 
 
@@ -15,6 +15,9 @@ $link = mysqli_connect (
 
 $sql = "UPDATE fragen SET index10='$check1' WHERE F_ID='$ip'";
 $result = mysqli_query($link,$sql) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+}
+if ($status == '34' or $status == '12'){
+    $ip= $_GET['ip'];
 }
 ?>
 <!DOCTYPE html>
@@ -93,18 +96,18 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 error_reporting(0);
 $status = $_GET['id'];
 if($status == '34'){ //NEIN gepresst
-    echo '<a href="index_10.php?id=12"><button type="button" class="btn btn-primary" style="margin-right: 15px;">Ja</button></a>';
-	echo '<a href="index_10.php?id=34"><button type="button" class="btn btn-primary focus" aria-pressed="true">Nein</button></a>';
+    echo '<a href="index_10.php?id=12&ip=' . $ip . '"><button type="button" class="btn btn-primary" style="margin-right: 15px;">Ja</button></a>';
+	echo '<a href="index_10.php?id=34&ip=' . $ip . '"><button type="button" class="btn btn-primary focus" aria-pressed="true">Nein</button></a>';
 	echo '<input type="hidden" name="radiobox" value="nein" />';//wenn nein aktiviert ist wird nein gepostet
 }	
 if($status == '12'){ //JA gepresst
-    echo '<a href="index_10.php?id=12"><button type="button" class="btn btn-primary focus" style="margin-right: 15px;" aria-pressed="true">Ja</button></a>';
-    echo '<a href="index_10.php?id=34"><button type="button" class="btn btn-primary">Nein</button></a>';
+    echo '<a href="index_10.php?id=12&ip=' . $ip . '"><button type="button" class="btn btn-primary focus" style="margin-right: 15px;" aria-pressed="true">Ja</button></a>';
+    echo '<a href="index_10.php?id=34&ip=' . $ip . '"><button type="button" class="btn btn-primary">Nein</button></a>';
     $show = "true";	
 }
 if($status != '34' && $status != '12'){ //NICHTS gepresst
-    echo '<a href="index_10.php?id=12"><button type="button" class="btn btn-primary" style="margin-right: 15px;">Ja</button></a>';
-    echo '<a href="index_10.php?id=34"><button type="button" class="btn btn-primary">Nein</button></a>';
+    echo '<a href="index_10.php?id=12&ip=' . $ip . '"><button type="button" class="btn btn-primary" style="margin-right: 15px;">Ja</button></a>';
+    echo '<a href="index_10.php?id=34&ip=' . $ip . '"><button type="button" class="btn btn-primary">Nein</button></a>';
 }
 ?>                                                            
 							<input type="hidden" name="id" value= "<?=$ip ?>">
