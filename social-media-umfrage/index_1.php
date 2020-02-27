@@ -1,4 +1,7 @@
 <?php 
+$back = $_GET['back'];
+$backid = $_GET['backid'];
+
 $link = mysqli_connect (
                      'localhost',
                      'root',
@@ -107,7 +110,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <form method="post" action="index_2.php">
                         <div class="form-check" style="">         
                             <input name="radiobox" value="no" type="hidden" /> 							<!--Wird genutzt damit die Checkboxen auch "null" sein können -->
-							<input type="hidden" name="id" value= "<?=$zufall?>" >
+							<input type="hidden" name="id" value= "<?php if($back == '2'){echo $backid;}else {echo $zufall;} ?>" >
 				
                             <!-- 1 -->
                             <div class="custom-control custom-radio">

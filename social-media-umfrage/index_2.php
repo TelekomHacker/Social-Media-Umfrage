@@ -1,6 +1,6 @@
 <?php
-$check1 = $_POST['radiobox'];
-$ip = $_POST['id'];
+$back = $_GET['back'];
+$backid = $_GET['backid'];  
 
 $link = mysqli_connect (
                      'localhost',
@@ -8,17 +8,26 @@ $link = mysqli_connect (
 					 '',
 					 'umfrage'
                    );
-				   
-$prim = "SELECT F_ID from fragen Where id='$ip'";	   
+
+if ($back == '2'){
+    $fid = $backid;    
+}
+else{
+$ip = $_POST['id'];
+echo $ip; 
+$prim = "SELECT F_ID from fragen Where id='$ip'";
 $erg = mysqli_query($link,$prim) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
-while($row = mysqli_fetch_assoc($erg)) 
+while($row = mysqli_fetch_assoc($erg))
 {
 	$fid = $row['F_ID'];
-}  
+}    
+}
 
-$loeschen = "UPDATE fragen set id='0' Where F_ID = '$fid'";	
-$delete = mysqli_query($link,$loeschen) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
+echo $fid;
+
+$check1 = $_POST['radiobox'];
+
 
 if($check1){
 $sql = "UPDATE fragen set index1='$check1' Where F_ID = '$fid'";
@@ -123,7 +132,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                             </div>
                         </div>
                         <div class="center" style="">
-                        <a href="index_1.php"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
+                        <a href="index_1.php?back=2&backid=<?php echo $ip; ?>"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
                         <button type="submit" class="btn btn-outline-primary" >Weiter</button>
                         </div>
                     </form>
