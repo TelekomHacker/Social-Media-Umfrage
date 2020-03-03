@@ -139,8 +139,9 @@ input[type=radio]
     font-size: 32pt;
 }
 
-.custom-range {
-    width: 70%; 
+.custom-range{
+  transform: scale(4);
+  width: 20%
 }
 
 .btn-primary {
