@@ -4,8 +4,8 @@ $backid = $_GET['backid'];
 
 $link = mysqli_connect (
                      'localhost',
-                     'root',
-					 '',
+                     'php',
+					 'Teto12345ä1!#',
 					 'umfrage'
                    );
 
@@ -14,7 +14,7 @@ if ($back == '2'){
 }
 else{
 $ip = $_POST['id'];
-echo $ip; 
+ 
 $prim = "SELECT F_ID from fragen Where id='$ip'";
 $erg = mysqli_query($link,$prim) or die("Anfrage fehlgeschlagen: " . mysqli_error($link));
 
@@ -23,8 +23,6 @@ while($row = mysqli_fetch_assoc($erg))
 	$fid = $row['F_ID'];
 }    
 }
-
-echo $fid;
 
 $check1 = $_POST['radiobox'];
 

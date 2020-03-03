@@ -17,8 +17,8 @@ $check1 = $_POST['radiobox'];
 
 $link = mysqli_connect (
                      'localhost',
-                     'root',
-					 '',
+                     'php',
+					 'Teto12345ä1!#',
 					 'umfrage'
                    );
 
@@ -95,7 +95,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <div class="progress-bar" role="progressbar" style="width: 35.714%" aria-valuenow="22.21" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="frage">
-                    <div class="h2" style="margin-bottom:42px;">Hast du dich schonmal dazu entschieden eine Pause von Social Media zu machen?</div>
+                    <div class="h2" style="">Hast du dich schonmal dazu entschieden eine Pause von Social Media zu machen?</div>
                     
                     <form method="post" action="index_12.php">
                         <div class="form-check" style="">         
@@ -123,7 +123,7 @@ if($status != '34' && $status != '12'){ //NICHTS gepresst
 						      <div class="collapse<?php if($show == "true"){echo "show";} ?>" id="jacolla">
 									<div class="card card-body">
 									
-									<div style="margin-bottom: 14px;">Wie hast du dich wärend dieser Zeit gefühlt?</div>
+									<div style="margin-bottom: 50px;font-size: 37pt;">Wie hast du dich wärend dieser Zeit gefühlt?</div>
 									
 							<!-- 1 -->
 							<div class="custom-control custom-radio">
@@ -147,7 +147,7 @@ if($status != '34' && $status != '12'){ //NICHTS gepresst
 						</div>	
 
                         </div>
-                        <div class="center" style="margin-top: 58px;">
+                        <div class="center" style="">
                         <a href="index_10.php?back=2&backid=<?php echo $ip; ?>"><button type="button" class="btn btn-outline-secondary" style="" >Zur&uuml;ck</button></a>
                         <button type="submit" class="btn btn-outline-primary" >Weiter</button>
                         </div>

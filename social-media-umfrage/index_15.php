@@ -13,8 +13,8 @@ $check1 = $_POST['radiobox'];
 
 $link = mysqli_connect (
                      'localhost',
-                     'root',
-					 '',
+                     'php',
+					 'Teto12345ä1!#',
 					 'umfrage'
                    );
 

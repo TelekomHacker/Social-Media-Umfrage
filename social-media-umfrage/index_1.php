@@ -4,8 +4,8 @@ $backid = $_GET['backid'];
 
 $link = mysqli_connect (
                      'localhost',
-                     'root',
-					 '',
+                     'php',
+					 'Teto12345ä1!#',
 					 'umfrage'
                    );
 $zufall = rand(10000000,99999999 );

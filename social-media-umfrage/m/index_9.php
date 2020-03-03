@@ -19,8 +19,8 @@ $Sonstiges = $_POST['Sonstiges'];
 
 $link = mysqli_connect (
                      'localhost',
-                     'root',
-					 '',
+                     'php',
+					 'Teto12345ä1!#',
 					 'umfrage'
                    );
 

@@ -10,12 +10,10 @@ else {
 
 $check1 = $_POST['radiobox'];
 
-echo $ip; 
-
 $link = mysqli_connect(
                      'localhost',
-                     'root',
-                     '',
+                     'php',
+                     'Teto12345ä1!#',
                      'umfrage'
                    );
 
@@ -91,6 +89,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                 <div class="frage">
                     <div class="h2" style="">Welchen Beruf &uuml;bst du aus?</div>
                     <form method="post" action="index_4.php">
+                    <div class="form-check" style=""> 
 						<input type="hidden" name="id" value= "<?=$ip ?>">
                             <!-- 1 -->
                             <div class="custom-control custom-radio">
@@ -104,7 +103,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                             </div>
 							<!-- 3 -->
 							    
-							    <div class="custom-control custom-radio" style="margin: 0px auto;">
+							    <div class="custom-control custom-radio" style="">
                                     <input type="radio" id="customRadio3" name="radiobox" class="custom-control-input" value="sonstiges"/>
                                     <label class="custom-control-label" for="customRadio3">Sonstiges</label><br />                              
                                 </div>

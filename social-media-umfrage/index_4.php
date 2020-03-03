@@ -10,11 +10,10 @@ else {
 
 $check1 = $_POST['radiobox'];
 
-echo $ip; 
 $link = mysqli_connect (
                      'localhost',
-                     'root',
-					 '',
+                     'php',
+					 'Teto12345ä1!#',
 					 'umfrage'
                    );
 

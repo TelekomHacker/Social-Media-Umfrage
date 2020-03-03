@@ -10,11 +10,11 @@ else {
 
 $check1 = $_POST['radiobox'];
 
-echo $ip; 
+
 $link = mysqli_connect (
                      'localhost',
-                     'root',
-					 '',
+                     'php',
+					 'Teto12345ä1!#',
 					 'umfrage'
                    );
 
@@ -92,7 +92,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
                     <form method="post" action="index_5.php">
 					<input type="hidden" name="id" value= "<?=$ip ?>">
                         <div class="form-group">
-							<input type="text" name="Lieblingsfach" class="form-control" id="t1" placeholder="Lieblingsfach" style="margin:0px;" />
+							<input type="text" name="Lieblingsfach" class="form-control" id="t1" placeholder="Lieblingsfach" style="" />
 						</div>
 						<br />
                         <div class="center" style="">

@@ -13,8 +13,8 @@ $check1 = $_POST['Lieblingsfach'];
 
 $link = mysqli_connect (
                      'localhost',
-                     'root',
-					 '',
+                     'php',
+					 'Teto12345ä1!#',
 					 'umfrage'
                    );
 
