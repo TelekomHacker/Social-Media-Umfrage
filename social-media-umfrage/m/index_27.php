@@ -82,7 +82,7 @@ Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechti
 
 	   <div class="wrapper">
 	       <div class="header">
-	            <div class="h1" style="">Social Media Umfrage 2020</div>
+	            <div class="h1" style="">Social Media Umfrage 2020 [Teil 2]</div>
 	            <div class="progress" style="">
                     <div class="progress-bar" role="progressbar" style="width: 92.857%" aria-valuenow="92.857" aria-valuemin="92.857" aria-valuemax="100"></div>
                 </div>
