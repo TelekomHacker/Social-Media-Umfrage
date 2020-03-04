@@ -40,7 +40,7 @@ body {
   -webkit-transform: scale(3); /* Safari and Chrome */
   -o-transform: scale(3); /* Opera */
   transform: scale(3);
-  margin-bottom: 44px;
+  margin-bottom: 50px;
 }
 
 input[type=checkbox]
@@ -140,7 +140,11 @@ input[type=radio]
 }
 
 .custom-range{
-  transform: scale(4);
+  -ms-transform: scale(3); /* IE */
+  -moz-transform: scale(3); /* FF */
+  -webkit-transform: scale(3); /* Safari and Chrome */
+  -o-transform: scale(3); /* Opera */
+  transform: scale(3);
   width: 20%
 }
 
