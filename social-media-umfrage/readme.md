@@ -1,5 +1,6 @@
 # bugs
 -index6 wenn zurück 2 einträge  
+-mobile range funktioniert nicht auf ecosia  
 # noch nicht fertig
 -mobile seite range  
 -custom 404 seite  
