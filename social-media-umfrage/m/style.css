@@ -145,7 +145,7 @@ input[type=radio]
   -webkit-transform: scale(3); /* Safari and Chrome */
   -o-transform: scale(3); /* Opera */
   transform: scale(3);
-  width: 20%
+  width: 28%
 }
 
 .btn-primary {
